@@ -1,0 +1,1825 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --img-max-width: 100%;
+    --img-object-fit: contain;
+    --wrapper-max-width: 100%;
+    --wrapper-bg-color: #fff;
+
+    --header-controls-gap: 1.5rem;
+    --menu-toggle-size: 5.625rem;
+    --site-header-pt: 1.375rem;
+    --header-top-gap: 2rem;
+    --header-contacts-gap: 0.25rem;
+    --contact-font-size: 1rem;
+    --contact-phone-size: 1.625rem;
+    --contact-email-size: 1.5rem;
+    --header-bottom-pt: 1.5rem;
+    --header-bottom-mb: 1.625rem;
+    --logo-font-size: 4.6875rem;
+    --logo-gap: 0.75rem;
+    --logo-stroke-width: 0.1875rem;
+    --logo-img-w: 6.25rem;
+    --logo-img-h: 5.625rem;
+    --logo-img-mt: -0.75rem;
+    --nav-font-size: 1.4375rem;
+    --nav-gap: 0;
+    --nav-padding-vertical: 0;
+    --nav-justify-content: space-between;
+    --nav-flex-wrap: wrap;
+    --nav-item-flex-shrink: 0;
+    --nav-link-color: black;
+    --nav-link-active-color: #FFD700;
+    --nav-link-active-border-width: 0.3125rem;
+    --nav-link-active-padding-bottom: 0.3125rem;
+    --btn-bg-color: #fff;
+    --btn-text-color: #FFD700;
+    --btn-border-width: 0.125rem;
+    --btn-font-size: 1.5rem;
+    --btn-font-weight: 700;
+    --btn-border-radius: 1.25rem;
+    --btn-padding-y: 0.625rem;
+    --btn-padding-x: 1.25rem;
+    --btn-icon-width: 2.5rem;
+    --btn-icon-margin-right: 0.75rem;
+    --btn-text-line-height: 1;
+    --btn-hover-color: #FFD700;
+
+    --main-bg-gradient: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10));
+    --main-bg-image: url('../img/MainOneBack.svg');
+    --main-bg-position: right top;
+    --main-bg-size: cover;
+    --main-inner-top: 4.375rem;
+    --main-info-width: 45.625rem;
+    --main-info-padding-top: 0;
+    --main-info-heading-color: #FFD700;
+    --main-info-heading-font-size: 3.25rem;
+    --main-info-heading-font-weight: 800;
+    --main-info-heading-text-shadow: 0.0625rem 0.0625rem 0.125rem black;
+    --main-info-heading-mb: 1.5rem;
+    --main-info-heading-max-width: 41.5rem;
+    --main-info-subtitle-color: white;
+    --main-info-subtitle-font-size: 1.5rem;
+    --main-info-subtitle-font-weight: 400;
+    --main-info-subtitle-mt: 0;
+    --main-info-subtitle-max-width: 37.5rem;
+    --main-info-paragraph-line-height: 1.7;
+    --main-one-ar: 1920 / 746;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    line-height: 1.125;
+    --gap: 1rem;
+    --container-max: 1200px;
+    --color-gold: #FFD700;
+    --color-grad-start: rgba(246, 190, 28, 1);
+    --color-grad-end: rgba(219, 113, 115, 1);
+}
+
+body {
+    font-family: var(--font-primary, "Roboto"), sans-serif;
+    font-weight: var(--font-weight-normal, 400);
+    background-color: var(--bg-color, #fff);
+    color: var(--text-color, #333);
+    font-size: var(--font-base, 1rem);
+    line-height: var(--line-base, 1.5);
+    overflow-x: hidden;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #005fa3;
+}
+
+a:active {
+    color: #004080;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: inherit !important;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: var(--img-max-width);
+    width: 100%;
+    height: auto;
+    object-fit: var(--img-object-fit);
+}
+
+.wrapper {
+    background: var(--wrapper-bg-color);
+    max-width: var(--wrapper-max-width);
+    margin: 0 auto;
+    width: 100%;
+    padding: var(--wrapper-horizontal-padding, 0);
+}
+
+.container {
+    width: 77%;
+    max-width: 77%;
+    margin: 0 auto;
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.site-header {
+    padding: var(--site-header-pt) 0 0;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--header-top-gap);
+    flex-wrap: wrap;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--header-controls-gap);
+    flex-wrap: wrap;
+}
+
+.header-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--header-contacts-gap);
+}
+
+.contact {
+    font-size: var(--contact-font-size);
+    font-weight: 700;
+    color: #FFD700;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.menu-toggle {
+    position: relative;
+    width: var(--menu-toggle-size);
+    height: var(--menu-toggle-size);
+    border: none;
+    background: #E1E1E1;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle__icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-toggle__icon--close {
+    display: none;
+}
+
+.menu-toggle.open .menu-toggle__icon--open {
+    display: none;
+}
+
+.menu-toggle.open .menu-toggle__icon--close {
+    display: block;
+}
+
+.contact--phone {
+    font-size: var(--contact-phone-size);
+    font-weight: 700;
+    color: #FFD700;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.contact--email {
+    font-size: var(--contact-email-size);
+    font-weight: 700;
+    color: #FFD700;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.header-divider {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0.0625rem;
+    background-color: #E4E4E4;
+    margin-top: 1rem;
+}
+
+.header-bottom {
+    padding-top: var(--header-bottom-pt);
+    margin-bottom: var(--header-bottom-mb);
+}
+
+header .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--logo-gap);
+    font-size: var(--logo-font-size);
+    font-weight: 700;
+    font-style: italic;
+    color: #FFD700;
+    paint-order: stroke fill;
+    -webkit-text-stroke: var(--logo-stroke-width) #D9BF6B;
+}
+
+header .logo img {
+    width: var(--logo-img-w);
+    height: var(--logo-img-h);
+    margin-top: var(--logo-img-mt);
+}
+
+header nav ul {
+    font-size: var(--nav-font-size);
+    list-style: none;
+    margin: 0;
+    padding: var(--nav-padding-vertical, 0) 0;
+    display: flex;
+    align-items: center;
+    justify-content: var(--nav-justify-content, space-between);
+    gap: var(--nav-gap);
+    flex-wrap: var(--nav-flex-wrap, wrap);
+    width: 100%;
+}
+
+header nav ul li {
+    flex-shrink: var(--nav-item-flex-shrink, 0);
+}
+
+header nav ul li a {
+    color: var(--nav-link-color, black);
+}
+
+header nav ul li a.active {
+    padding-bottom: var(--nav-link-active-padding-bottom, 0.3125rem);
+    border-bottom: var(--nav-link-active-border-width, 0.3125rem) solid var(--nav-link-active-color, #FFD700);
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    padding-bottom: 0.3125rem;
+    border-bottom: 0.3125rem solid #FFD700;
+}
+
+header nav ul li.btn a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn-bg-color, #fff);
+    color: var(--btn-text-color, #FFD700);
+    border: var(--btn-border-width, 0.125rem) solid currentColor;
+    font-size: var(--btn-font-size, 1.5rem);
+    font-weight: var(--btn-font-weight, 700);
+    border-radius: var(--btn-border-radius, 1.25rem);
+    padding: var(--btn-padding-y, 0.625rem) var(--btn-padding-x, 1.25rem);
+    text-decoration: none;
+    transition: color 0.5s ease, border-color 0.5s ease;
+}
+
+header nav ul li.btn .btn__icon {
+    display: block;
+    width: var(--btn-icon-width, 2.5rem);
+    height: auto;
+    margin-right: var(--btn-icon-margin-right, 0.75rem);
+}
+
+header nav ul li.btn .btn__text {
+    line-height: var(--btn-text-line-height, 1);
+}
+
+header nav ul li.btn a:hover,
+header nav ul li.btn a:focus,
+header nav ul li.btn a:active {
+    color: var(--btn-hover-color, #FFD700) !important;
+    border-color: currentColor;
+}
+
+.MainOne {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.MainOne--inner {
+    position: absolute;
+    top: var(--main-inner-top, 4.375rem);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.MainOne--info {
+    width: var(--main-info-width, 45.625rem);
+    padding-top: var(--main-info-padding-top, 0);
+    top: auto;
+}
+
+.MainOne--info h2 {
+    color: var(--main-info-heading-color, #FFD700);
+    font-size: var(--main-info-heading-font-size, 3.25rem);
+    font-weight: var(--main-info-heading-font-weight, 800);
+    text-shadow: var(--main-info-heading-text-shadow, 0.0625rem 0.0625rem 0.125rem black);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: var(--main-info-heading-mb, 1.5rem);
+    max-width: var(--main-info-heading-max-width, 41.5rem);
+}
+
+.MainOne--info h1 {
+    color: var(--main-info-subtitle-color, white);
+    font-size: var(--main-info-subtitle-font-size, 1.5rem);
+    font-weight: var(--main-info-subtitle-font-weight, 400);
+    margin-top: var(--main-info-subtitle-mt, 0);
+    max-width: var(--main-info-subtitle-max-width, 37.5rem);
+}
+
+.MainOne--info p {
+    line-height: var(--main-info-paragraph-line-height, 1.7);
+}
+
+.MainTwo {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1920 / 569;
+    padding: 0;
+    background:
+        url('../img/MainTwoBack.svg') no-repeat center center;
+    background-size: 100% auto;
+}
+
+.MainTwo--inner {
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.MainTwo__title {
+    color: #000;
+    font-size: 3.25rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    max-width: 41.5rem;
+}
+
+.MainTwo__text {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    max-width: 31.25rem;
+}
+
+.MainThree {
+    padding: 3rem 0;
+    background: #fff;
+}
+
+.MainThree__heading {
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 5.125rem;
+    color: #000;
+}
+
+.MainThree__perks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 3.875rem;
+}
+
+.MainThree__card {
+    position: relative;
+    min-width: 20rem;
+    height: 12.5rem;
+    background: #F9F9F9;
+    border: 1px solid #E3E3E3;
+    border-radius: 0.875rem;
+    box-sizing: border-box;
+    overflow: visible;
+    padding: 3.75rem 1.5rem 1.5rem;
+}
+
+
+.MainThree__icon {
+    position: absolute;
+    top: -2.5rem;
+    left: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    background: #fff;
+    border: 1px solid #E3E3E3;
+    border-radius: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainThree__body {
+    margin-left: 0;
+}
+
+
+.MainThree__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+}
+
+.MainThree__text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    margin: 0;
+}
+
+.MainFour {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1920 / 746;
+    background:
+        url('../img/MainFourBack.svg') no-repeat center center;
+    background-size: cover;
+}
+
+.MainFour__inner {
+    position: absolute;
+    top: 9.5rem;
+    left: 51.25rem;
+    width: 35rem;
+}
+
+.MainFour__title {
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin: 0 0 1rem;
+}
+
+.MainFour__subtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0 0 0.75rem;
+}
+
+.MainFour__text {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 1.625rem;
+    margin: 0 0 0.9375rem;
+}
+
+.MainFour__btn {
+    display: inline-flex;
+    /* или просто flex, если нужно занимать весь доступный блок */
+    align-items: center;
+    /* вертикальное центрирование текста */
+    justify-content: center;
+    /* горизонтальное центрирование текста */
+    width: 23.375rem;
+    /* то же, что было у button */
+    height: 3.375rem;
+    background-color: #FFFFFF;
+    border: none;
+    /* <a> не имеет границы по умолчанию, но оставляем для одинаковости */
+    border-radius: 0.875rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    /* убираем подчёркивание у ссылки */
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    /* при необходимости можно добавить «user-select: none;» */
+}
+
+
+.MainFour__btn:hover {
+    opacity: 0.95;
+}
+
+.MainFive {
+    padding: 2.8125rem 0;
+    background: #ffffff;
+}
+
+.MainFive--inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.MainFive__heading {
+    font-size: 3.25rem;
+    font-weight: 800;
+    line-height: 1.1;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.MainFive__highlight {
+    background: linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 49%,
+            rgba(219, 113, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.MainFive__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.MainFive__card {
+    position: relative;
+    width: 28.75rem;
+    height: 20.9375rem;
+    border: 0.125rem solid transparent;
+    border-radius: 0.875rem;
+    background-image:
+        linear-gradient(#fff, #fff),
+        linear-gradient(180deg, rgba(246, 190, 28, 1) 0%, rgba(219, 113, 115, 1) 100%);
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 4rem;
+    overflow: hidden;
+}
+
+.MainFive__img {
+    position: absolute;
+    width: 11.9375rem;
+    height: 18.75rem;
+    top: 10.5rem;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.MainFive__price {
+    position: absolute;
+    top: 1.3125rem;
+    right: 1.0625rem;
+    font-size: 1.875rem;
+    font-weight: 700;
+    background: linear-gradient(95deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(246, 190, 28, 1) 10%,
+            rgba(219, 113, 115, 1) 61%,
+            rgba(219, 113, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.MainFive__card p {
+    position: absolute;
+    left: 14rem;
+    width: calc(100% - 13.8125rem - 1.4375rem);
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    color: #000;
+    z-index: 1;
+}
+
+.MainFive__card p:nth-of-type(1) {
+    top: 4.625rem;
+}
+
+.MainFive__card p:nth-of-type(2) {
+    top: 8.75rem;
+}
+
+.MainFive__card p:nth-of-type(3) {
+    top: 14.25rem;
+}
+
+.MainFive__check {
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0;
+}
+
+.MainFive__btn {
+    display: inline-flex;
+    /* чтобы содержимое центрировалось */
+    align-items: center;
+    /* вертикальное центрирование текста */
+    justify-content: center;
+    /* горизонтальное центрирование текста */
+    margin: 0 auto;
+    /* по центру контейнера */
+    width: 19.25rem;
+    height: 4rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+    border: none;
+    /* у <a> нет границы по умолчанию, но оставляем */
+    border-radius: 0.875rem;
+    text-decoration: none;
+    /* убираем подчёркивание у ссылки */
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.MainFive__btn:hover {
+    opacity: 0.95;
+}
+
+.MainFive__btn:hover,
+.MainFive__btn:focus,
+.MainFive__btn:active {
+    color: #fff !important;
+    /* всегда белый текст */
+    /* (опционально) можно чуть затемнить фон, например: */
+    /* background: linear-gradient(90deg,
+          rgba(226, 180, 20, 1) 0%,
+          rgba(199, 103, 105, 1) 100%); */
+}
+
+.MainSix {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1920 / 746;
+    background:
+        url('../img/MainSixBack.png') no-repeat center center;
+    background-size: cover;
+}
+
+.MainSix__inner {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.MainSix__content {
+    margin-left: 0;
+    max-width: 43.75rem;
+    color: #fff;
+}
+
+.MainSix__title {
+    font-size: 3.25rem;
+    font-weight: 800;
+    margin: 0 0 1rem;
+    line-height: 1.1;
+}
+
+.MainSix__subtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 2rem;
+    line-height: 1.625rem;
+}
+
+.MainSix__btn {
+    display: inline-block;
+    width: 23.375rem;
+    height: 3.375rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 0.875rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.MainSix__btn:hover {
+    opacity: 0.95;
+}
+
+.MainSeven {
+    padding: 2.8125rem 0;
+    background: #ffffff;
+}
+
+.MainSeven__inner {
+    margin: 0 auto;
+}
+
+.MainSeven__heading {
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 2.5rem;
+}
+
+.MainSeven__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.MainSeven__card {
+    width: 28.75rem;
+    height: 20.9375rem;
+    background: linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+    border-radius: 0.875rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.MainSeven__card img {
+    margin: 0 0.75rem 0;
+    width: 22.0625rem;
+    height: 12.625rem;
+    object-fit: contain;
+}
+
+.MainSeven__card h2 {
+    margin: 0.75rem 1.5rem 0.3125rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+}
+
+.MainSeven__card p {
+    margin: 0 1.5rem 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    color: #fff;
+    text-align: left;
+}
+
+.site-footer {
+    width: 100vw;
+    height: 26.625rem;
+    background: #212121;
+}
+
+.site-footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 11.1875rem 0 11.1875rem;
+}
+
+.site-footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 4.0625rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #FFD700;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.1875rem #D9BF6B;
+}
+
+.footer-logo img {
+    width: 6.25rem;
+    height: 5.625rem;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.footer-nav a {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #FFD700;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.125rem #D9BF6B;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.footer-phone {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #FFF;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.0625rem #FFF;
+}
+
+.site-footer__col:nth-child(2) .footer-nav a {
+    font-size: 1.75rem;
+    color: #FFF;
+    -webkit-text-stroke: 0.0625rem #FFF;
+}
+
+.footer-contact-title {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #FFF;
+    -webkit-text-stroke: 0.0625rem #FFF;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.site-footer__inner>.site-footer__col:nth-child(2) {
+    margin-top: 0.75rem;
+}
+
+.site-footer__inner>.site-footer__col:nth-child(3) {
+    margin-top: 3.125rem;
+}
+
+.footer-social img {
+    width: 5.25rem;
+    height: 5.25rem;
+    object-fit: contain;
+}
+
+/* === Перекрываем hover/focus/active для ссылок первой колонки (жёлтый) === */
+.site-footer__col:nth-child(1) .footer-nav a:hover,
+.site-footer__col:nth-child(1) .footer-nav a:focus,
+.site-footer__col:nth-child(1) .footer-nav a:active {
+    color: #FFD700 !important;
+    /* оставляем жёлтый */
+    -webkit-text-stroke-color: #D9BF6B !important;
+    /* обводка тоже жёлтая */
+    text-decoration: none;
+}
+
+/* === Перекрываем hover/focus/active для ссылок второй колонки (белый) === */
+.site-footer__col:nth-child(2) .footer-nav a:hover,
+.site-footer__col:nth-child(2) .footer-nav a:focus,
+.site-footer__col:nth-child(2) .footer-nav a:active {
+    color: #FFF !important;
+    /* оставляем белый */
+    -webkit-text-stroke-color: #FFF !important;
+    /* обводка тоже белая */
+    text-decoration: none;
+}
+
+.AdresaOne {
+    position: relative;
+    width: 100%;
+    /* растянем фон на всю ширину, а по высоте пропорционально */
+    background: url('../img/AddresaOneBack.svg') no-repeat center center;
+    background-size: 100% auto;
+    aspect-ratio: 1920 / 569;
+    /* подставьте реальный AR картинки */
+}
+
+.AdresaOne--inner {
+    /* 77% ширины экрана, центрируем */
+    width: 77%;
+    margin: 0 auto;
+    height: 100%;
+    /* займёт всю «высоту» секции */
+    display: flex;
+    align-items: center;
+    /* по вертикали по центру */
+}
+
+.AdresaOne--inner>div {
+    z-index: 1;
+    /* выше фонового изображения */
+}
+
+.AdresaOne h1 {
+    font-size: 3.25rem;
+    /* 52px / 16 */
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 1rem;
+    /* 1rem = 16px */
+}
+
+.AdresaOne h2 {
+    font-size: 1rem;
+    /* 16px / 16 */
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 2rem;
+    /* 2rem = 32px */
+}
+
+.AdresaOne button {
+    display: block;
+    width: 18.75rem;
+    /* 374px / 16 */
+    height: 3.375rem;
+    /* 54px / 16 */
+    background-color: #fff;
+    border: none;
+    border-radius: 0.875rem;
+    /* 14px / 16 */
+    font-size: 1.25rem;
+    /* 20px / 16 */
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: 0;
+    /* сбросим дефолт */
+}
+
+.AdresaOne button:hover {
+    opacity: 0.95;
+}
+
+.AdresaTwo {
+    padding: 60px 0;
+    /* отступ сверху/снизу */
+    background: #fff;
+}
+
+.AdresaTwo--inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    /* расстояние между h3, h2 и «пустышкой» */
+}
+
+.AdresaTwo--inner h3 {
+    font-size: 1.875rem;
+    /* 30px */
+    font-weight: 800;
+    /* Extra Bold */
+    color: #000;
+    margin: 0;
+}
+
+.AdresaTwo--inner h2 {
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 400;
+    /* Regular */
+    color: #000;
+    margin: 0;
+}
+
+.AdresaTwo__map {
+    width: 100%;
+    /* во всю ширину container */
+    height: 444px;
+    /* фиксированная высота */
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    /* можно подкорректировать */
+}
+
+.AdresaTwo__map-link {
+    position: absolute;
+    left: 0;
+    font-size: 0.75rem;
+    /* ~12px */
+    color: #000;
+    /* заменил на чёрный — по вкусу */
+    text-decoration: none;
+    z-index: 2;
+}
+
+.AdresaTwo__map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.ServicesOne {
+    position: relative;
+    width: 100%;
+    /* растянем фон на всю ширину, а по высоте пропорционально */
+    background: url('../img/ServicesOneBack.svg') no-repeat center center;
+    background-size: 100% auto;
+    aspect-ratio: 1920 / 569;
+}
+
+.ServicesOne--inner {
+    /* 77% ширины экрана, центрируем */
+    width: 77%;
+    margin: 0 auto;
+    height: 100%;
+    /* займёт всю «высоту» секции */
+    display: flex;
+    align-items: center;
+    /* по вертикали по центру */
+}
+
+.ServicesOne--inner>div {
+    z-index: 1;
+    /* выше фонового изображения */
+}
+
+.ServicesOne h1 {
+    font-size: 3.25rem;
+    /* 52px / 16 */
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 1rem;
+    /* 1rem = 16px */
+}
+
+.ServicesOne h2 {
+    font-size: 1rem;
+    /* 16px / 16 */
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 2rem;
+    /* 2rem = 32px */
+}
+
+.ServicesOne button {
+    display: block;
+    width: 18.75rem;
+    /* 374px / 16 */
+    height: 3.375rem;
+    /* 54px / 16 */
+    background-color: #fff;
+    border: none;
+    border-radius: 0.875rem;
+    /* 14px / 16 */
+    font-size: 1.25rem;
+    /* 20px / 16 */
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: 0;
+    /* сбросим дефолт */
+}
+
+.ServicesOne button:hover {
+    opacity: 0.95;
+}
+
+.ServicesTwo {
+    padding: 4rem 0;
+    background: #ffffff;
+}
+
+.ServicesTwo--inner {
+    max-width: 74.0625rem;
+    margin: 0 auto;
+}
+
+.ServicesTwoCards {
+    display: flex;
+    justify-content: center;
+}
+
+.ServicesTwoCard {
+    position: relative;
+    width: 100%;
+    height: 18.6875rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem 2rem;
+    border: 0.125rem solid transparent;
+    border-radius: 0.875rem;
+    background-image:
+        linear-gradient(#fff, #fff),
+        linear-gradient(180deg, rgba(246, 190, 28, 1) 0%, rgba(219, 113, 115, 1) 100%);
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+}
+
+.ServicesPic {
+    flex-shrink: 0;
+    margin-right: 2rem;
+}
+
+.ServicesPic img {
+    display: block;
+    width: 20.1875rem;
+    height: auto;
+}
+
+.ServicesTwoCard__text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.ServicesTitle {
+    margin: 2rem 0 0;
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: #000;
+    line-height: 1.2;
+}
+
+.ServicesTwoCard__details {
+    margin: 1rem 0;
+}
+
+.ServicesTwoCard__details h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.4;
+}
+
+.ServicesTwoCard__details h3 {
+    margin: 0;
+    font-size: 0.625rem;
+    font-weight: 400;
+    color: #000;
+    opacity: 0.5;
+    line-height: 1.2;
+}
+
+.ServicesTwoCard__price {
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+.ServicesPrice {
+    margin: 2rem 0 0;
+    font-size: 1.875rem;
+    font-weight: 800;
+    background: linear-gradient(95deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(246, 190, 28, 1) 10%,
+            rgba(219, 113, 115, 1) 61%,
+            rgba(219, 113, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.JobsOne {
+    position: relative;
+    width: 100%;
+    /* растянем фон на всю ширину, а по высоте пропорционально */
+    background: url('../img/JobsOneBack.svg') no-repeat center center;
+    background-size: 100% auto;
+    aspect-ratio: 1920 / 569;
+    /* подставьте реальный AR картинки */
+}
+
+.JobsOne--inner {
+    /* 77% ширины экрана, центрируем */
+    width: 77%;
+    margin: 0 auto;
+    height: 100%;
+    /* займёт всю «высоту» секции */
+    display: flex;
+    align-items: center;
+    /* по вертикали по центру */
+}
+
+.JobsOne--inner>div {
+    z-index: 1;
+    /* выше фонового изображения */
+}
+
+.JobsOne h1 {
+    font-size: 3.25rem;
+    /* 52px / 16 */
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 1rem;
+    /* 1rem = 16px */
+}
+
+.JobsOne h2 {
+    font-size: 1rem;
+    /* 16px / 16 */
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 2rem;
+    /* 2rem = 32px */
+}
+
+.JobsOne button {
+    display: block;
+    width: 18.75rem;
+    /* 374px / 16 */
+    height: 3.375rem;
+    /* 54px / 16 */
+    background-color: #fff;
+    border: none;
+    border-radius: 0.875rem;
+    /* 14px / 16 */
+    font-size: 1.25rem;
+    /* 20px / 16 */
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: 0;
+    /* сбросим дефолт */
+}
+
+.JobsOne button:hover {
+    opacity: 0.95;
+}
+
+.JobsTwo {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.JobsTwo--inner {
+    max-width: 74.0625rem;
+    margin: 0 auto;
+}
+
+.JobsTwo {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.JobsTwo--inner {
+    max-width: 74.0625rem;
+    margin: 0 auto;
+}
+
+.JobsTwoCard {
+    position: relative;
+    width: 100%;
+    height: 14.4375rem;
+    background-color: #fff;
+    border: 0.125rem solid transparent;
+    border-radius: 0.875rem;
+    background-image:
+        linear-gradient(#fff, #fff),
+        linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.JobsTwoCard__btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 321px;
+    height: 60px;
+    background: linear-gradient(90deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+    border: none;
+    border-radius: 0.875rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    transition: opacity 0.2s;
+}
+
+.JobsTwoCard__btn:hover {
+    opacity: 0.95;
+}
+
+.JobsTwoCard__text {
+    padding-left: 1.5rem;
+    flex: 1;
+}
+
+.JobsTwoCard__text h1 {
+    margin: -2rem 0 0;
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: #000;
+}
+
+.JobsTwoCard__text h2 {
+    margin: 3rem 0 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.JobsTwoCard__price {
+    margin: 0;
+    font-size: 1.875rem;
+    font-weight: 800;
+    background: linear-gradient(95deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(246, 190, 28, 1) 10%,
+            rgba(219, 113, 115, 1) 61%,
+            rgba(219, 113, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    line-height: 1;
+}
+
+.OffersOne {
+    position: relative;
+    width: 100%;
+    background: url('../img/OffersOneBack.svg') no-repeat center center;
+    background-size: 100% auto;
+    aspect-ratio: 1920 / 569;
+}
+
+.OffersOne--inner {
+    /* 77% ширины экрана, центрируем */
+    width: 77%;
+    margin: 0 auto;
+    height: 100%;
+    /* займёт всю «высоту» секции */
+    display: flex;
+    align-items: center;
+    /* по вертикали по центру */
+}
+
+.OffersOne--inner>div {
+    z-index: 1;
+    /* выше фонового изображения */
+}
+
+.OffersOne h1 {
+    font-size: 3.25rem;
+    /* 52px / 16 */
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 1rem;
+    /* 1rem = 16px */
+}
+
+.OffersOne h2 {
+    font-size: 1rem;
+    /* 16px / 16 */
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 2rem;
+    /* 2rem = 32px */
+}
+
+.OffersOne button {
+    display: block;
+    width: 18.75rem;
+    /* 374px / 16 */
+    height: 3.375rem;
+    /* 54px / 16 */
+    background-color: #fff;
+    border: none;
+    border-radius: 0.875rem;
+    /* 14px / 16 */
+    font-size: 1.25rem;
+    /* 20px / 16 */
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: 0;
+    /* сбросим дефолт */
+}
+
+.OffersOne button:hover {
+    opacity: 0.95;
+}
+
+.OffersTwo {
+    padding: 4rem 0;
+    background: #ffffff;
+}
+
+/* Контейнер с двумя карточками в ряд */
+.OffersTwo__inner {
+    max-width: 74.0625rem;
+    /* 1185px / 16 */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* разнести карточки по ширине */
+    gap: 2rem;
+    /* интервал между карточками */
+}
+
+.OfferCard {
+    position: relative;
+    width: 44.6875rem;
+    height: 27.3125rem;
+    border: 0.125rem solid transparent;
+    border-radius: 0.875rem;
+    background-image:
+        linear-gradient(#fff, #fff),
+        linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.OfferCard__top {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.OfferCard__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    border-top-right-radius: 0.875rem;
+    border-top-left-radius: 0;
+    object-fit: cover;
+    display: block;
+}
+
+.OfferCard__text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    max-width: 11.25rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.OfferCard__title {
+    margin: 0;
+    font-size: 1.875rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.OfferCard__subtitle {
+    margin: 0.5rem 0 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.OfferCard__bottom {
+    position: relative;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OfferCard__bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.0625rem;
+    background: linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+}
+
+.OfferCard__more {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 800;
+    background: linear-gradient(95deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(246, 190, 28, 1) 10%,
+            rgba(219, 113, 115, 1) 61%,
+            rgba(219, 113, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+}
+
+.SubOfferOne {
+    /* фон на всю ширину, высота 587px */
+    width: 100%;
+    height: 36.6875rem;
+    /* 587px / 16 */
+    background: url("../img/SubOffersOneBack.svg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.SubOfferOne__inner {
+    position: absolute;
+    top: 50%;
+    right: 83px;
+    transform: translateY(-50%);
+    max-width: 30rem;
+    color: #fff;
+}
+
+.SubOfferOne__title {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 800;
+    color: #FFD700;
+    line-height: 1.2;
+}
+
+.SubOfferOne__subtitle {
+    margin: 2.75rem 0 2.75rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 1.5rem;
+}
+
+.SubOfferOne__list {
+    margin: 0;
+    padding-left: 1rem;
+    list-style: disc outside;
+    color: #FFD700;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.SubOfferOne__list li:first-child {
+    list-style-type: none;
+}
+
+.SubOfferOne__note {
+    margin: 1rem 0 0;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.2;
+}
+
+.RefuelOne {
+    position: relative;
+    width: 100%;
+    /* растянем фон на всю ширину, а по высоте пропорционально */
+    background: url('../img/RefuelOneBack.svg') no-repeat center center;
+    background-size: 100% auto;
+    aspect-ratio: 1920 / 569;
+    /* подставьте реальный AR картинки */
+}
+
+.RefuelOne--inner {
+    /* 77% ширины экрана, центрируем */
+    width: 77%;
+    margin: 0 auto;
+    height: 100%;
+    /* займёт всю «высоту» секции */
+    display: flex;
+    align-items: center;
+    /* по вертикали по центру */
+}
+
+.RefuelOne--inner>div {
+    z-index: 1;
+    /* выше фонового изображения */
+}
+
+.RefuelOne h1 {
+    font-size: 3.25rem;
+    /* 52px / 16 */
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 1rem;
+    /* 1rem = 16px */
+}
+
+.RefuelOne h2 {
+    font-size: 1rem;
+    /* 16px / 16 */
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 2rem;
+    /* 2rem = 32px */
+}
+
+.RefuelOne button {
+    display: block;
+    width: 18.75rem;
+    /* 374px / 16 */
+    height: 3.375rem;
+    /* 54px / 16 */
+    background-color: #fff;
+    border: none;
+    border-radius: 0.875rem;
+    /* 14px / 16 */
+    font-size: 1.25rem;
+    /* 20px / 16 */
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: 0;
+}
+
+.RefuelOne button:hover {
+    opacity: 0.95;
+}
+
+.RefuelTwo {
+    padding: 4rem 0;
+    background: #ffffff;
+}
+
+.RefuelTwo--inner {
+    max-width: 1185px;
+    margin: 0 auto;
+}
+
+.RefuelTwo__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.14rem;
+    justify-content: space-between;
+}
+
+.RefuelTwo__card {
+    position: relative;
+    width: 20.75rem;
+    height: 20.75rem;
+    border: 0.125rem solid transparent;
+    border-radius: 0.875rem;
+    background-image:
+        linear-gradient(#fff, #fff),
+        linear-gradient(180deg, rgba(246, 190, 28, 1) 0%, rgba(219, 113, 115, 1) 100%);
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.RefuelTwo__top {
+    position: relative;
+    width: 100%;
+    height: 14.5884375rem;
+    background: linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+}
+
+.RefuelTwo__icon {
+    position: absolute;
+    top: 1.07rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 13.7156rem;
+    height: 4.1895rem;
+    object-fit: contain;
+}
+
+.RefuelTwo__desc-box {
+    position: absolute;
+    top: 7.58rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 13.7156rem;
+    height: 5.0374rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.RefuelTwo__desc-text {
+    margin: 0;
+    font-size: 0.8975rem;
+    font-weight: 500;
+    line-height: 1.047rem;
+    color: #000;
+}
+
+.RefuelTwo__bottom {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 6.16rem;
+    background: #fff;
+    display: flex;
+}
+
+
+.RefuelTwo__bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+    transform: translateX(-0.5px);
+    z-index: 2;
+}
+
+.RefuelTwo__price-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RefuelTwo__price {
+    margin: 0;
+    font-size: 2.095rem;
+    font-weight: 800;
+    background: linear-gradient(95deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(246, 190, 28, 1) 10%,
+            rgba(219, 113, 115, 1) 61%,
+            rgba(219, 113, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.RefuelTwo__meter-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RefuelTwo__meter {
+    width: 8.4785rem;
+    height: 3.7405rem;
+    object-fit: contain;
+}
+
+.RefuelTwo__meter {
+    width: var(--refuel-two-meter-width);
+    height: var(--refuel-two-meter-height);
+    object-fit: contain;
+}

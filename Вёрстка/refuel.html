@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Топливо EuroOil</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="container site-header">
+        <div class="header-top">
+          <span class="logo">
+            EuroOil
+            <img src="img/logo.svg" width="100" height="90" alt="EuroOilLogo" />
+          </span>
+          <!-- В этот блок теперь попадают и контакты, и кнопка -->
+          <div class="header-controls">
+            <div class="header-contacts">
+              <div class="contact contact--phone">8 (707) 249-34-56</div>
+              <div class="contact contact--email">euroil@mail.ru</div>
+            </div>
+            <button
+              class="menu-toggle"
+              aria-expanded="false"
+              aria-label="Открыть меню"
+            >
+              <img
+                src="img/HeaderTopRightDefault.svg"
+                alt=""
+                class="menu-toggle__icon menu-toggle__icon--open"
+              />
+              <img
+                src="img/HeaderTopRightClose.svg"
+                alt=""
+                class="menu-toggle__icon menu-toggle__icon--close"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="header-divider"></div>
+
+        <div class="header-bottom">
+          <nav>
+            <ul>
+              <li class="btn">
+                <a href="/refuel.html">
+                  <img
+                    src="img/BenzinIconka.svg"
+                    alt="Иконка канистры"
+                    class="btn__icon"
+                  />
+                  <span class="btn__text">Заправиться</span>
+                </a>
+              </li>
+              <li><a href="/index.html">Главная</a></li>
+              <li><a href="/adresa.html">Адреса</a></li>
+              <li><a href="/services.html">Услуги</a></li>
+              <li><a href="/offers.html">Акции</a></li>
+              <li><a href="/jobs.html">Трудоустройство</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="RefuelOne">
+        <div class="container RefuelOne--inner">
+          <div>
+            <h1>Топливо в наличии</h1>
+            <h2>
+              Проверьте наличие и литраж всех видов топлива в реальном времени
+            </h2>
+            <button>К топливу</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="RefuelTwo">
+        <div class="container RefuelTwo--inner">
+          <div class="RefuelTwo__cards">
+            <!-- Карточка 1 -->
+            <div class="RefuelTwo__card">
+              <!-- Верхняя часть карточки -->
+              <div class="RefuelTwo__top">
+                <!-- 1) Иконка + название топлива (уже обрезанная SVG) -->
+                <img
+                  src="img/RefuelTwoBlockOnePic.svg"
+                  alt="Иконка АИ-92"
+                  class="RefuelTwo__icon"
+                />
+                <!-- 2) Блок с описанием (черный текст, 18px) -->
+                <div class="RefuelTwo__desc-box">
+                  <p class="RefuelTwo__desc-text">
+                    Универсальный бензин для ежедневных поездок: обеспечивает стабильную работу двигателя и опти-мальную экономичность.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Нижняя часть карточки -->
+              <div class="RefuelTwo__bottom">
+                <!-- Левый «кубик» с ценой, по центру -->
+                <div class="RefuelTwo__price-wrapper">
+                  <h2 class="RefuelTwo__price">210 ₸/л</h2>
+                </div>
+                <!-- Правый «кубик» с количеством и метровой шкалой -->
+                <div class="RefuelTwo__meter-wrapper">
+                  <img
+                    src="img/RefuelTwoBlockOneMeter.svg"
+                    alt="Остаток: 11 300 л"
+                    class="RefuelTwo__meter"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="RefuelTwo__card">
+              <div class="RefuelTwo__top">
+                <img
+                  src="img/RefuelTwoBlockTwoPic.svg"
+                  alt="Иконка АИ-95"
+                  class="RefuelTwo__icon"
+                />
+                <div class="RefuelTwo__desc-box">
+                  <p class="RefuelTwo__desc-text">
+                    Премиальный бензин для современных двигателей: высокая стойкость к де-тонации и мягкий отклик при средних и высоких оборотах.
+                  </p>
+                </div>
+              </div>
+              <div class="RefuelTwo__bottom">
+                <div class="RefuelTwo__price-wrapper">
+                  <h2 class="RefuelTwo__price">262 ₸/л</h2>
+                </div>
+                <div class="RefuelTwo__meter-wrapper">
+                  <img
+                    src="img/RefuelTwoBlockTwoMeter.svg"
+                    alt="Остаток: 8 651 л"
+                    class="RefuelTwo__meter"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="RefuelTwo__card">
+              <div class="RefuelTwo__top">
+                <img
+                  src="img/RefuelTwoBlockThreePic.svg"
+                  alt="Иконка АИ-98"
+                  class="RefuelTwo__icon"
+                />
+                <div class="RefuelTwo__desc-box">
+                  <p class="RefuelTwo__desc-text">
+                    Высокооктановый бензин для мощных двигателей: максимальная защита от детонации и ровная тяга на любых оборотах.
+                  </p>
+                </div>
+              </div>
+              <div class="RefuelTwo__bottom">
+                <div class="RefuelTwo__price-wrapper">
+                  <h2 class="RefuelTwo__price">310 ₸/л</h2>
+                </div>
+                <div class="RefuelTwo__meter-wrapper">
+                  <img
+                    src="img/RefuelTwoBlockThreeMeter.svg"
+                    alt="Остаток: 13 000 л"
+                    class="RefuelTwo__meter"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="RefuelTwo__card">
+              <div class="RefuelTwo__top">
+                <img
+                  src="img/RefuelTwoBlockFourPic.svg"
+                  alt="Иконка ДТ-Лет"
+                  class="RefuelTwo__icon"
+                />
+                <div class="RefuelTwo__desc-box">
+                  <p class="RefuelTwo__desc-text">
+                    Летнее дизельное топливо с оптимальной вязкостью при высоких
+                    температурах: обеспечивает лёгкий запуск и стабильную работу
+                    двигателя в жаркую погоду.
+                  </p>
+                </div>
+              </div>
+              <div class="RefuelTwo__bottom">
+                <div class="RefuelTwo__price-wrapper">
+                  <h2 class="RefuelTwo__price">290 ₸/л</h2>
+                </div>
+                <div class="RefuelTwo__meter-wrapper">
+                  <img
+                    src="img/RefuelTwoBlockFourMeter.svg"
+                    alt="Остаток: 9 429 л"
+                    class="RefuelTwo__meter"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="RefuelTwo__card">
+              <div class="RefuelTwo__top">
+                <img
+                  src="img/RefuelTwoBlockFivePic.svg"
+                  alt="Иконка ДТ-Зим"
+                  class="RefuelTwo__icon"
+                />
+                <div class="RefuelTwo__desc-box">
+                  <p class="RefuelTwo__desc-text">
+                    Зимнее дизельное топливо с пониженной температурой
+                    застывания: предотвращает загустение и обеспечивает надёжный
+                    пуск двигателя даже при сильных морозах.
+                  </p>
+                </div>
+              </div>
+              <div class="RefuelTwo__bottom">
+                <div class="RefuelTwo__price-wrapper">
+                  <h2 class="RefuelTwo__price">295 ₸/л</h2>
+                </div>
+                <div class="RefuelTwo__meter-wrapper">
+                  <img
+                    src="img/RefuelTwoBlockFiveMeter.svg"
+                    alt="Остаток: 0 л"
+                    class="RefuelTwo__meter"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Карточка 6 -->
+            <div class="RefuelTwo__card">
+              <div class="RefuelTwo__top">
+                <img
+                  src="img/RefuelTwoBlockSixPic.svg"
+                  alt="Иконка Газ"
+                  class="RefuelTwo__icon"
+                />
+                <div class="RefuelTwo__desc-box">
+                  <p class="RefuelTwo__desc-text">
+                    Сжиженный пропан-бутан (LPG): экономичное топливо с чистым
+                    сгоранием и стабильной мощностью.
+                  </p>
+                </div>
+              </div>
+              <div class="RefuelTwo__bottom">
+                <div class="RefuelTwo__price-wrapper">
+                  <h2 class="RefuelTwo__price">120 ₸/л</h2>
+                </div>
+                <div class="RefuelTwo__meter-wrapper">
+                  <img
+                    src="img/RefuelTwoBlockSixMeter.svg"
+                    alt="Остаток: 4 198 м³"
+                    class="RefuelTwo__meter"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <div class="site-footer__col">
+            <span class="footer-logo">
+              EuroOil
+              <img src="img/logo.svg" alt="EuroOil Logo" />
+            </span>
+            <nav class="footer-nav">
+              <a href="/index.html">На главную</a>
+              <a href="/adresa.html">Адреса</a>
+              <a href="/services.html">Услуги</a>
+            </nav>
+          </div>
+
+          <div class="site-footer__col">
+            <div class="footer-phone">
+              8 (707) 249-34-56
+              <div>euroil@mail.ru</div>
+            </div>
+            <nav class="footer-nav">
+              <a href="/offers.html">Акции</a>
+              <a href="/jobs.html">Трудоустройство</a>
+              <a href="/refuel.html">Топливо</a>
+            </nav>
+          </div>
+
+          <div class="site-footer__col site-footer__col--right">
+            <div class="footer-contact-title">Обратная связь</div>
+            <div class="footer-social">
+              <a href="https://t.me/aleksey1854" target="_blank"
+                ><img src="img/telegram.svg" alt="Telegram"
+              /></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=77072493456"
+                target="_blank"
+                ><img src="img/whatsapp.svg" alt="WhatsApp"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

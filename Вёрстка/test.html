@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Автозаправочная сеть EuroOil</title>
+    <link rel="stylesheet" href="test.css" />
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-top">
+        <span class="logo">
+          EuroOil
+          <img src="img/logo.svg" alt="EuroOilLogo" />
+        </span>
+        <div class="header-controls">
+          <div class="header-contacts">
+            <div class="contact contact--phone">8 (707) 249-34-56</div>
+            <div class="contact contact--email">euroil@mail.ru</div>
+          </div>
+          <button
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-label="Открыть меню"
+          >
+            <img
+              src="img/HeaderTopRightDefault.svg"
+              alt=""
+              class="menu-toggle__icon menu-toggle__icon--open"
+            />
+            <img
+              src="img/HeaderTopRightClose.svg"
+              alt=""
+              class="menu-toggle__icon menu-toggle__icon--close"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="header-divider"></div>
+
+      <div class="container header-bottom">
+        <nav>
+          <ul>
+            <li class="btn">
+              <a href="/testRefuel.html">
+                <img
+                  src="img/BenzinIconka.svg"
+                  alt="Иконка канистры"
+                  class="btn__icon"
+                />
+                <span class="btn__text">Заправиться</span>
+              </a>
+            </li>
+            <li><a href="/test.html" class="active">Главная</a></li>
+            <li><a href="/testAdresa.html">Адреса</a></li>
+            <li><a href="/testServices.html">Услуги</a></li>
+            <li><a href="/testOffers.html">Акции</a></li>
+            <li><a href="/testJobs.html">Трудоустройство</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="MainOne">
+      <div class="MainOne-bg">
+        <img src="../img/MainOneBack.svg" alt="Main Background" />
+      </div>
+      <!-- Absolute-блок, который растянем на 100% ширины секции -->
+      <div class="MainOne--inner">
+        <!-- Внутри — уже «контейнер», который задаст max-width:77% и margin:0 auto -->
+        <div class="container">
+          <div class="MainOne--info">
+            <h2>Лучшая сеть автозаправок по всей области</h2>
+            <h1>Более 5 разных видов топлива в автоматизированных колонках</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="MainTwo">
+      <div class="MainTwo-bg">
+        <img src="../img/MainTwoBack.svg" alt="MainTwoBackground" />
+      </div>
+      <div class="MainTwo--inner">
+        <div class="container">
+          <div class="MainTwo--info">
+            <h2>Чистое топливо без примесей</h2>
+            <h1>
+              Наша топливная формула без сажи и отложений — идеальный ресурс
+              вашего двигателя.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="MainThree">
+      <div class="container MainThree--inner">
+        <h3 class="MainThree__heading">Наши преимущества</h3>
+        <div class="MainThree__perks">
+          <div class="MainThree__card">
+            <div class="MainThree__icon">
+              <img src="img/MainThreeBlockOneIcon.svg" alt="" />
+            </div>
+            <div class="MainThree__body">
+              <h1 class="MainThree__title">Широкий ассортимент</h1>
+              <p class="MainThree__text">
+                АИ-92, АИ-95, АИ-98, дизель и газ — сертифицированное по ГОСТ
+                топливо для любых типов двигателей с оптимальной
+                производительностью.
+              </p>
+            </div>
+          </div>
+
+          <div class="MainThree__card">
+            <div class="MainThree__icon">
+              <img src="img/MainThreeBlockTwoIcon.svg" alt="" />
+            </div>
+            <div class="MainThree__body">
+              <h1 class="MainThree__title">Круглосуточная работа</h1>
+              <p class="MainThree__text">
+                Заправляйтесь в любое время суток: наши АЗС открыты 24/7 без
+                выходных и праздников. Будьте уверены, что мы всегда рядом,
+                когда это нужно.
+              </p>
+            </div>
+          </div>
+
+          <div class="MainThree__card">
+            <div class="MainThree__icon">
+              <img src="img/MainThreeBlockThreeIcon.svg" alt="" />
+            </div>
+            <div class="MainThree__body">
+              <h1 class="MainThree__title">Современные автоколонки</h1>
+              <p class="MainThree__text">
+                Новейшее оборудование с точной цифровой дозировкой, быстрым
+                обслуживанием и встроенной системой предотвращения ошибок.
+              </p>
+            </div>
+          </div>
+
+          <div class="MainThree__card">
+            <div class="MainThree__icon">
+              <img src="img/MainThreeBlockFourIcon.svg" alt="" />
+            </div>
+            <div class="MainThree__body">
+              <h1 class="MainThree__title">Удобная геолокация</h1>
+              <p class="MainThree__text">
+                Более 30 станций в Павлодаре и области: на магистралях, в
+                спальных районах и у ключевых перекрёстков — всегда удобно и в
+                пределах.
+              </p>
+            </div>
+          </div>
+
+          <div class="MainThree__card">
+            <div class="MainThree__icon">
+              <img src="img/MainThreeBlockFiveIcon.svg" alt="" />
+            </div>
+            <div class="MainThree__body">
+              <h1 class="MainThree__title">Удобные способы оплаты</h1>
+              <p class="MainThree__text">
+                Принимаем наличные, все виды банковских карт, Kaspi-QR и
+                бесконтактные платежи — быстро и без лишних комиссий.
+              </p>
+            </div>
+          </div>
+
+          <div class="MainThree__card">
+            <div class="MainThree__icon">
+              <img src="img/MainThreeBlockSixIcon.svg" alt="" />
+            </div>
+            <div class="MainThree__body">
+              <h1 class="MainThree__title">Скидки и акции</h1>
+              <p class="MainThree__text">
+                Сезонные предложения: скидки на топливо, спец-цены для
+                постоянных клиентов и бонусы при участии в акциях.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="MainFour">
+      <div class="MainFour-bg">
+        <img src="../img/MainFourBack.svg" alt="MainFourBackground" />
+      </div>
+      <div class="MainFour--inner">
+        <div class="container">
+          <div class="MainFour--info">
+            <h2>Утренний драйв</h2>
+            <h1>
+              Начинайте день выгодно — скидка 5 ₸ за литр в каждое утро буднего
+              дня!
+            </h1>
+            <p>
+              • каждую неделю с понедельника по пятницу, с 7:00 до 9:00<br />
+              • во всех АЗС EuroOil в Павлодаре и области<br />
+              • при заправке от 15 л любого топлива
+            </p>
+            <a href="refuel.html" class="MainFour__btn">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="MainFive">
+      <div class="container MainFive--inner">
+        <h3 class="MainFive__heading">
+          Популярное <span class="MainFive__highlight">топливо</span>
+        </h3>
+
+        <div class="MainFive__cards">
+          <div class="MainFive__card">
+            <img
+              src="img/MainFiveBlockOnePic.svg"
+              alt=""
+              class="MainFive__img"
+            />
+            <h2 class="MainFive__price">210 ₸/л</h2>
+            <p>
+              <img
+                src="img/MainFiveCheckIcon.svg"
+                alt=""
+                class="MainFive__check"
+              />Сбалансирован- ная мощность и экономичность
+            </p>
+            <p>
+              <img
+                src="img/MainFiveCheckIcon.svg"
+                alt=""
+                class="MainFive__check"
+              />Стабильная работа при умеренных нагрузках
+            </p>
+            <p>
+              <img
+                src="img/MainFiveCheckIcon.svg"
+                alt=""
+                class="MainFive__check"
+              />Доступная цена для еждневного использования
+            </p>
+          </div>
+
+          <div class="MainFive__card">
+            <img
+              src="img/MainFiveBlockTwoPic.svg"
+              alt=""
+              class="MainFive__img"
+            />
+            <h2 class="MainFive__price">262 ₸/л</h2>
+            <p>
+              <img
+                src="img/MainFiveCheckIcon.svg"
+                alt=""
+                class="MainFive__check"
+              />Повышенная устойчивость к перегреву
+            </p>
+            <p>
+              <img
+                src="img/MainFiveCheckIcon.svg"
+                alt=""
+                class="MainFive__check"
+              />Лучший отклик двигателя на высоких оборотах
+            </p>
+            <p>
+              <img
+                src="img/MainFiveCheckIcon.svg"
+                alt=""
+                class="MainFive__check"
+              />Идеально для современных моторов
+            </p>
+          </div>
+
+          <div class="MainFive__card">
+            <img
+              src="img/MainFiveBlockThreePic.svg"
+              alt=""
+              class="MainFive__img"
+            />
+            <h2 class="MainFive__price">310 ₸/л</h2>
+            <p>
+              <img
+                src="img/MainFiveCheckIcon.svg"
+                alt=""
+                class="MainFive__check"
+              />Максимальная защита от детонации
+            </p>
+            <p>
+              <img
+                src="img/MainFiveCheckIcon.svg"
+                alt=""
+                class="MainFive__check"
+              />Оптимально для высокофорсиро- ванных двигателей
+            </p>
+            <p>
+              <img
+                src="img/MainFiveCheckIcon.svg"
+                alt=""
+                class="MainFive__check"
+              />Гладкий ход на всех режимах работы мотора
+            </p>
+          </div>
+        </div>
+
+        <a href="refuel.html" class="MainFive__btn">Весь ассортимент</a>
+      </div>
+    </section>
+
+    <section class="MainSix">
+      <div class="MainSix-bg">
+        <img src="/img/MainSixBack.png  " alt="MainSixBackground" />
+      </div>
+      <div class="MainSix--inner">
+        <div class="container">
+          <div class="MainSix--info">
+            <h2>Мониторинг топлива на автоколонках</h2>
+            <h1>
+              Узнай сколько топлива осталось на автоколонке в реальном времени
+            </h1>
+            <a href="refuel.html" class="MainFour__btn">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="MainSeven">
+      <div class="container MainSeven__inner">
+        <h1 class="MainSeven__heading">Наше оборудование</h1>
+
+        <div class="MainSeven__cards">
+          <div class="MainSeven__card">
+            <img src="img/MainSevenBlockOnePic.svg" alt="" />
+            <h2>Север 210</h2>
+            <p>
+              Надёжные колонки с высокой производитель- ностью, устойчивые к
+              перепадам напряжения.
+            </p>
+          </div>
+
+          <div class="MainSeven__card">
+            <img src="img/MainSevenBlockTwoPic.svg" alt="" />
+            <h2>DTP-60</h2>
+            <p>
+              Компактные и тихие насосы с мощным потоком и стабильной
+              беспрерывной работой.
+            </p>
+          </div>
+
+          <div class="MainSeven__card">
+            <img src="img/MainSevenBlockThreePic.svg" alt="" />
+            <h2>Parker Racor 500FG</h2>
+            <p>
+              Топливные сепараторы, эффективно удаляющие влагу и загрязнения.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__col">
+          <span class="footer-logo">
+            EuroOil
+            <img src="img/logo.svg" alt="EuroOil Logo" />
+          </span>
+          <nav class="footer-nav">
+            <a href="/index.html">На главную</a>
+            <a href="/adresa.html">Адреса</a>
+            <a href="/services.html">Услуги</a>
+          </nav>
+        </div>
+
+        <div class="site-footer__col">
+          <div class="footer-phone">
+            8 (707) 249-34-56
+            <div>euroil@mail.ru</div>
+          </div>
+          <nav class="footer-nav">
+            <a href="/offers.html">Акции</a>
+            <a href="/jobs.html">Трудоустройство</a>
+            <a href="/refuel.html">Топливо</a>
+          </nav>
+        </div>
+
+        <div class="site-footer__col site-footer__col--right">
+          <div class="footer-contact-title">Обратная связь</div>
+          <div class="footer-social">
+            <a href="https://t.me/aleksey1854" target="_blank">
+              <img src="img/telegram.svg" alt="Telegram" />
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=77072493456"
+              target="_blank"
+            >
+              <img src="img/whatsapp.svg" alt="WhatsApp" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

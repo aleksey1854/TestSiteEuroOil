@@ -1,0 +1,3023 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --text-shadow: 0.0625rem 0.0625rem 0.125rem black;
+    --border-radius: 0.875rem;
+    --main-btn-font-size: 1.25rem;
+
+    --site-header-pt: 1rem;
+    --default-gap: 2rem;
+    --header-contacts-gap: 0.21875rem;
+    --contact-font-size: 1.21875rem;
+    --menu-toggle-size: 4.21875rem;
+    --logo-gap: 1.21875rem;
+    --logo-font-size: 3.515625rem;
+    --logo-img-w: 6.1036rem;
+    --logo-img-h: 5.6597rem;
+    --divider-height: 0.0625rem;
+
+    --header-bottom-pt: 1.125rem;
+    --header-bottom-mb: 1.21875rem;
+    --nav-font-size: 1.078125rem;
+    --nav-gap: 0;
+    --nav-padding-vertical: 0;
+    --nav-justify-content: space-between;
+    --nav-flex-wrap: wrap;
+    --nav-item-flex-shrink: 0;
+    --nav-link-color: black;
+    --nav-link-active-color: #FFD700;
+    --nav-link-active-border-width: 0.234375rem;
+    --nav-link-active-padding-bottom: 0.234375rem;
+    --btn-bg-color: #fff;
+    --btn-text-color: #FFD700;
+    --btn-border-width: 0.09375rem;
+    --btn-font-size: 1.125rem;
+    --btn-font-weight: 700;
+    --btn-border-radius: 0.9375rem;
+    --btn-padding-y: 0.46875rem;
+    --btn-padding-x: 0.9375rem;
+    --btn-icon-width: 1.875rem;
+    --btn-icon-margin-right: 0.5625rem;
+    --btn-text-line-height: 1;
+    --btn-hover-color: #FFD700;
+
+    --main-inner-top: 5.1796875rem;
+    --main-info-width: 31.03125rem;
+    --main-info-heading-font-size: 2.4375rem;
+    --main-info-heading-mb: 2.3203125rem;
+    --adresaone-btn-margin: 2.3203125rem auto 0;
+    --main-info-subtitle-font-size: 1.5rem;
+    --main-info-subtitle-max-width: 25.828125rem;
+    --main-info-paragraph-line-height: 1.7;
+
+    --mainthree-padding: 3.421875rem;
+    --mainthree-heading-font-size: 2.4375rem;
+    --mainthree-heading-mb: 5.15625rem;
+    --mainthree-perks-column-gap: 2.6015625rem;
+    --mainthree-perks-row-gap: 2.953125rem;
+    --mainthree-card-height: 11.05125rem;
+    --mainthree-card-padding-top: 2.90625rem;
+    --mainthree-card-padding-horizontal: 1.40625rem;
+    --mainthree-card-padding-bottom: 2.484375rem;
+    --mainthree-icon-top: -1.5rem;
+    --mainthree-icon-left: 1.875rem;
+    --mainthree-icon-box-size: 3.75rem;
+    --mainthree-icon-img-size: 2.5rem;
+    --mainthree-title-font-size: 1.125rem;
+    --mainthree-title-mb: 0.28125rem;
+    --mainthree-text-font-size: 0.9375rem;
+    --mainthree-text-line-height: 1.1;
+    --grid-mainthree: repeat(3, 1fr);
+
+    --main-four-info-width: 31.03125rem;
+    --main-four-info-heading-mb: 1.3125rem;
+    --main-four-info-h1-mt: 1.3125rem;
+    --main-four-info-h1-max-width: 25.828125rem;
+    --main-four-info-p-font-size: 1rem;
+    --main-four-info-p-mt: 1.3125rem;
+    --main-four-info-p-max-width: 25.828125rem;
+    --main-four-btn-width: 23.375rem;
+    --main-four-btn-height: 3.375rem;
+    --main-four-btn-mt: 1.3125rem;
+
+    --mainfive-padding-vertical: 2.8125rem;
+    --mainfive-inner-gap: 2.5rem;
+    --mainfive-heading-gap: 0.5rem;
+    --mainfive-cards-gap: 2rem;
+    --mainfive-card-width: 21.515625rem;
+    --mainfive-card-height: 20.0625rem;
+    --mainfive-card-padding-top: 4rem;
+    --mainfive-img-width: 10.828125rem;
+    --mainfive-img-height: 15.9375rem;
+    --mainfive-img-top: 1.546875rem;
+    --mainfive-img-left: 1.125rem;
+    --mainfive-price-top: 1.078125rem;
+    --mainfive-price-right: 0.9375rem;
+    --mainfive-price-font-size: 1.875rem;
+    --mainfive-card-p-left: 13.06875rem;
+    --mainfive-card-p-width-calc: 6.59875rem;
+    --mainfive-card-p-gap: 0.09375rem;
+    --mainfive-card-p-font-size: 0.75rem;
+    --mainfive-card-p-line-height: 1rem;
+    --mainfive-card-p1-top: 4.625rem;
+    --mainfive-card-p2-top: 8.4rem;
+    --mainfive-card-p3-top: 13.20rem;
+    --mainfive-check-size: 1rem;
+    --main-five-btn-width: 14.4375rem;
+    --main-five-btn-height: 3.375rem;
+    --main-btn-five-font-size: 1.25rem;
+    --jobstwo-btn-font-size: 1.25rem;
+
+    --mainseven-padding-vertical: 2.8125rem;
+    --mainseven-heading-margin-bottom: 1.5rem;
+    --mainseven-cards-gap: 2rem;
+    --mainseven-card-width: 21.515625rem;
+    --mainseven-card-height: 20.0625rem;
+    --mainseven-card-padding-top: 1.546875rem;
+    --mainseven-card-img-margin-right-left: 0.75rem;
+    --mainseven-card-img-width: 18.421875rem;
+    --mainseven-card-img-height: 11.34375rem;
+    --mainseven-card-h2-margin-top: 0.75rem;
+    --mainseven-card-h2-margin-horizontal: 1.5rem;
+    --mainseven-card-h2-margin-bottom: 0.3125rem;
+    --mainseven-card-h2-font-size: 1.25rem;
+    --mainseven-card-p-margin-horizontal: 1.5rem;
+    --mainseven-card-p-font-size: 0.875rem;
+
+    --site-footer-width: 100vw;
+    --site-footer-height: 24.65625rem;
+    --site-footer-inner-padding-top: 3.09375rem;
+    --site-footer-inner-padding-horizontal: 0;
+    --site-footer-col-gap: 2.765625rem;
+    --footer-nav-gap: 2.765625rem;
+    --footer-nav-a-font-size: 1.5rem;
+    --footer-nav-a-stroke-width: 0.125rem;
+    --footer-phone-font-size: 1.875rem;
+    --footer-phone-stroke-width: 0.0625rem;
+    --footer-social-gap: 0.5625rem;
+    --footer-social-img-size: 5rem;
+    --site-footer-3col-gap: 0.765625rem;
+
+    --main-all-btn-width: 12.421875rem;
+    --main-all-btn-height: 3rem;
+
+    --adresa-two-padding-vertical: 3.75rem;
+    --adresa-two-map-height: 27.75rem;
+    --adresa-two-map-margin-top: 1rem;
+    --adresa-two-inner-gap: 1rem;
+    --adresa-two-h3-font-size: 1.875rem;
+    --adresa-two-h2-font-size: 1.25rem;
+    --adresa-two-map-link-font-size: 0.75rem;
+    --adresa-two-map-width: 100%;
+    --adresaone-bg-aspect: 1920 / 567;
+
+    --adresaone-bg-image: url("/img/AddresaOneBack.svg");
+    --servicesone-bg-image: url("/img/ServicesOneBack.svg");
+    --jobsone-bg-image: url("/img/JobsOneBack.svg");
+    --offersone-bg-image: url("/img/OffersOneBack.svg");
+    --sub-offer-one-bg-image: url("../img/SubOffersOneBack.svg");
+    --sub-offer-one-bg-height: auto;
+    --refuelone-bg-image: url("img/RefuelOneBack.svg");
+
+    --adresaone-info-width: 31.03125rem;
+    --adresaone-h2-font-size: 2.4375rem;
+    --adresaone-h2-margin-bottom: 2.3203125rem;
+    --adresaone-h1-font-size: 1.5rem;
+    --adresaone-h1-max-width: 29.828125rem;
+    --adresaone-btn-width: 12.421875rem;
+    --adresaone-btn-height: 3rem;
+    --adresaone-btn-font-size: 1.25rem;
+    --adresaone-btn-margin: 2.322rem;
+    --adresaone-inner-top: 50%;
+    --adresaone-inner-transform: translateY(-50%);
+
+    --services-two-padding-vertical: 4.875rem;
+    --services-two-card-height: 14.00625rem;
+    --services-two-card-padding-vertical: 1.96875rem;
+    --services-two-card-padding-horizontal: 1.828125rem;
+    --services-pic-margin-right: 3.453125rem;
+    --services-pic-img-width: 15.140625rem;
+    --services-title-font-size: 1.921875rem;
+    --services-two-card-details-margin-vertical: 0.859375rem;
+    --services-two-card-details-h2-margin-bottom: 0.75rem;
+    --services-two-card-details-h2-font-size: 1.125rem;
+    --services-two-card-details-h3-font-size: 0.5625rem;
+    --services-price-font-size: 1.875rem;
+
+    --jobs-two-padding-vertical: 4rem;
+    --jobs-two-card-height: 10.828125rem;
+    --jobs-two-card-padding: 1.5rem;
+    --jobs-two-card-btn-top: 1.5rem;
+    --jobs-two-card-btn-right: 1.5rem;
+    --jobs-two-card-btn-width: 17.42765625rem;
+    --jobs-two-card-btn-height: 3rem;
+    --jobs-two-card-btn-font-size: 1.25rem;
+    --jobs-two-card-text-width: 55.03125rem;
+    --jobs-two-card-text-h1-top: 1.5rem;
+    --jobs-two-card-text-h1-left: 1.5rem;
+    --jobs-two-card-text-h1-font-size: 1.921875rem;
+    --jobs-two-card-text-h2-margin-top: 2.4375rem;
+    --jobs-two-card-text-h2-font-size: 1.125rem;
+    --jobs-two-card-price-font-size: 1.6875rem;
+    --jobs-two-card-price-bottom: 1.5rem;
+    --jobs-two-card-price-right: 1.5rem;
+
+    --offers-two-padding-vertical: 4rem;
+    --offers-two-inner-gap: 2.390625rem;
+    --offers-two-inner-direction: row;
+    --offer-card-width: 33.515625rem;
+    --offer-card-height: 20.484375rem;
+    --offer-card-text-overlay-left: 1.125rem;
+    --offer-card-text-overlay-max-width: 12.84375rem;
+    --offer-card-title-font-size: 2.578125rem;
+    --offer-card-subtitle-margin-top: 0.5625rem;
+    --offer-card-subtitle-font-size: 1.3125rem;
+    --offer-card-bottom-height: 1.7578125rem;
+    --offer-card-more-font-size: 1.03125rem;
+    --offers-two-inner-align: stretch;
+
+    --sub-offer-one-inner-right: 6.328125rem;
+    --sub-offer-one-inner-max-width: 30rem;
+    --sub-offer-one-inner-position: absolute;
+    --sub-offer-one-inner-top: 50%;
+    --sub-offer-one-inner-transform: translateY(-50%);
+    --sub-offer-one-inner-margin: 0;
+    --sub-offer-one-inner-justify-self: auto;
+    --sub-offer-one-title-font-size: 2.671875rem;
+    --sub-offer-one-subtitle-margin-vertical: 2.1328125rem;
+    --sub-offer-one-subtitle-font-size: 1.125rem;
+    --sub-offer-one-list-padding-left: 1rem;
+    --sub-offer-one-list-font-size: 1.125rem;
+    --sub-offer-one-note-margin-top: 1rem;
+    --sub-offer-one-note-font-size: 0.5625rem;
+    --sub-offer-one-subtitle-color: #FFFFFF;
+    --sub-offer-one-inner-width: auto;
+    --sub-offer-one-inner-padding-vertical: 0;
+
+    --refuel-two-inner-margin: 0 auto;
+
+    --refuel-two-cards-gap: 5.484375rem;
+
+    --refuel-two-card-width: 19.5rem;
+    --refuel-two-card-height: 19.5rem;
+
+    --refuel-two-top-height: 13.734375rem;
+
+    --refuel-two-icon-top: 1.0078125rem;
+    --refuel-two-icon-width: 12.890625rem;
+    --refuel-two-icon-height: 3.984375rem;
+
+    --refuel-two-desc-box-top: 6.7734375rem;
+    --refuel-two-desc-box-width: 12.890625rem;
+    --refuel-two-desc-box-height: 4.734375rem;
+
+    --refuel-two-desc-text-font-size: 0.84375rem;
+
+    --refuel-two-bottom-height: 5.7890625rem;
+
+    --refuel-two-price-font-size: 1.96875rem;
+
+    --refuel-two-meter-width: 7.96875rem;
+    --refuel-two-meter-height: 3.515625rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 77%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1600px) {
+    :root {
+        --main-inner-top: 4.951757812rem;
+        --main-info-width: 29.676796875rem;
+        --main-info-heading-font-size: 2.33146875rem;
+        --main-info-heading-mb: 2.221801562rem;
+        --adresaone-btn-margin: 2.221801562rem auto 0;
+        --main-info-subtitle-font-size: 1.43475rem;
+        --main-info-subtitle-max-width: 24.71046875rem;
+        --main-info-paragraph-line-height: 1.625;
+        --mainthree-padding: 3.273023438rem;
+        --mainthree-heading-mb: 4.931953125rem;
+        --main-btn-font-size: 1.195625rem;
+
+        --main-four-info-width: 29.681390625rem;
+        --main-four-info-heading-mb: 1.25540625rem;
+        --main-four-info-h1-mt: 1.25540625rem;
+        --main-four-info-h1-max-width: 24.704601562rem;
+        --main-four-info-p-font-size: 0.9565rem;
+        --main-four-info-p-mt: 1.25540625rem;
+        --main-four-info-p-max-width: 24.704601562rem;
+        --main-four-btn-width: 22.3581875rem;
+        --main-four-btn-height: 3.2281875rem;
+        --main-four-btn-mt: 1.25540625rem;
+
+        --mainfive-padding-vertical: 2.69015625rem;
+        --mainfive-inner-gap: 2.39125rem;
+        --mainfive-heading-gap: 0.47825rem;
+        --mainfive-cards-gap: 1.913rem;
+        --mainfive-card-width: 20.579695313rem;
+        --mainfive-card-height: 19.18978125rem;
+        --mainfive-card-padding-top: 3.826rem;
+        --mainfive-img-width: 10.357101563rem;
+        --mainfive-img-height: 15.24421875rem;
+        --mainfive-img-top: 1.479585938rem;
+        --mainfive-img-left: 1.0760625rem;
+        --mainfive-price-top: 1.031226563rem;
+        --mainfive-price-right: 0.89671875rem;
+        --mainfive-price-font-size: 1.7934375rem;
+        --mainfive-card-p-left: 12.500259375rem;
+        --mainfive-card-p-width-calc: 6.311704375rem;
+        --mainfive-card-p-gap: 0.089671875rem;
+        --mainfive-card-p-font-size: 0.717375rem;
+        --mainfive-card-p-line-height: 0.9565;
+        --mainfive-card-p1-top: 4.4238125rem;
+        --mainfive-card-p2-top: 8.0346rem;
+        --mainfive-card-p3-top: 12.6258rem;
+        --mainfive-check-size: 0.9565rem;
+        --main-five-btn-width: 13.80946875rem;
+        --main-five-btn-height: 3.2281875rem;
+        --main-btn-five-font-size: 1.195625rem;
+        --jobstwo-btn-font-size: 1.195625rem;
+
+        --mainseven-padding-vertical: 2.69015625rem;
+        --mainseven-heading-margin-bottom: 1.43475rem;
+        --mainseven-cards-gap: 1.913rem;
+        --mainseven-card-width: 20.579695313rem;
+        --mainseven-card-height: 19.18978125rem;
+        --mainseven-card-padding-top: 1.479585938rem;
+        --mainseven-card-img-margin-right-left: 0.717375rem;
+        --mainseven-card-img-width: 17.620523438rem;
+        --mainseven-card-img-height: 10.850296875rem;
+        --mainseven-card-h2-margin-top: 0.717375rem;
+        --mainseven-card-h2-margin-horizontal: 1.43475rem;
+        --mainseven-card-h2-margin-bottom: 0.29890625rem;
+        --mainseven-card-h2-font-size: 1.195625rem;
+        --mainseven-card-p-margin-horizontal: 1.43475rem;
+        --mainseven-card-p-font-size: 0.8369375rem;
+
+        --site-footer-height: 23.583703125rem;
+        --site-footer-inner-padding-top: 2.959171875rem;
+        --site-footer-inner-padding-horizontal: 0rem;
+        --site-footer-col-gap: 2.645320312rem;
+        --footer-nav-gap: 2.645320312rem;
+        --footer-nav-a-font-size: 1.43475rem;
+        --footer-nav-a-stroke-width: 0.1195625rem;
+        --footer-phone-font-size: 1.7934375rem;
+        --footer-phone-stroke-width: 0.05978125rem;
+        --footer-social-gap: 0.53803125rem;
+        --footer-social-img-size: 4.7825rem;
+        --site-footer-3col-gap: 0.732320312rem;
+
+        --main-all-btn-width: 11.881523438rem;
+        --main-all-btn-height: 2.8695rem;
+
+        --adresa-two-padding-vertical: 3.5869rem;
+        --adresa-two-map-height: 26.5369rem;
+        --adresa-two-map-margin-top: 0.9565rem;
+        --adresa-two-inner-gap: 0.9565rem;
+        --adresa-two-h3-font-size: 1.7934rem;
+        --adresa-two-h2-font-size: 1.1956rem;
+        --adresa-two-map-link-font-size: 0.7174rem;
+
+        --adresaone-info-width: 29.6753rem;
+        --adresaone-h2-font-size: 2.3311rem;
+        --adresaone-h2-margin-bottom: 2.2188rem;
+        --adresaone-h1-font-size: 1.4348rem;
+        --adresaone-h1-max-width: 25.7011rem;
+        --adresaone-btn-width: 11.8813rem;
+        --adresaone-btn-height: 2.8695rem;
+        --adresaone-btn-font-size: 1.1956rem;
+        --adresaone-btn-margin: 2.2218rem;
+
+        --jobs-two-padding-vertical: 3.826rem;
+        --jobs-two-card-height: 10.3598rem;
+        --jobs-two-card-padding: 1.4348rem;
+        --jobs-two-card-btn-top: 1.4348rem;
+        --jobs-two-card-btn-right: 1.4348rem;
+        --jobs-two-card-btn-width: 16.6697rem;
+        --jobs-two-card-btn-height: 2.8695rem;
+        --jobs-two-card-btn-font-size: 1.1946rem;
+        --jobs-two-card-text-width: 52.6351rem;
+        --jobs-two-card-text-h1-top: 1.4348rem;
+        --jobs-two-card-text-h1-left: 1.4348rem;
+        --jobs-two-card-text-h1-font-size: 1.838rem;
+        --jobs-two-card-text-h2-margin-top: 2.331rem;
+        --jobs-two-card-text-h2-font-size: 1.0759rem;
+        --jobs-two-card-price-font-size: 1.6133rem;
+        --jobs-two-card-price-bottom: 1.4348rem;
+        --jobs-two-card-price-right: 1.4348rem;
+
+        --offers-two-inner-gap: 2.2867rem;
+
+        --offers-two-padding-vertical: 3.826rem;
+        --offer-card-width: 32.0669rem;
+        --offer-card-height: 19.5906rem;
+        --offer-card-text-overlay-left: 1.0759rem;
+        --offer-card-text-overlay-max-width: 12.2846rem;
+        --offer-card-title-font-size: 2.4653rem;
+        --offer-card-subtitle-margin-top: 0.538rem;
+        --offer-card-subtitle-font-size: 1.2552rem;
+        --offer-card-bottom-height: 1.6818rem;
+        --offer-card-more-font-size: 0.9862rem;
+
+        --sub-offer-one-inner-right: 6.0517rem;
+        --sub-offer-one-inner-max-width: 28.695rem;
+        --sub-offer-one-title-font-size: 2.5554rem;
+        --sub-offer-one-subtitle-margin-vertical: 2.0406rem;
+        --sub-offer-one-subtitle-font-size: 1.0759rem;
+        --sub-offer-one-list-padding-left: 0.9565rem;
+        --sub-offer-one-list-font-size: 1.0759rem;
+        --sub-offer-one-note-margin-top: 0.9565rem;
+        --sub-offer-one-note-font-size: 0.538rem;
+    }
+}
+
+@media (max-width: 1439px) {
+    :root {
+        --main-inner-top: 4.951757812rem;
+        --main-info-width: 29.676796875rem;
+        --main-info-heading-font-size: 2.33146875rem;
+        --main-info-heading-mb: 2.221801562rem;
+        --adresaone-btn-margin: 2.221801562rem auto 0;
+        --main-info-subtitle-font-size: 1.43475rem;
+        --main-info-subtitle-max-width: 24.71046875rem;
+        --main-info-paragraph-line-height: 1.2553125;
+        --main-btn-font-size: 0.923859437rem;
+
+        --mainthree-heading-font-size: 2.33146875rem;
+        --mainthree-perks-column-gap: 2.010227344rem;
+        --mainthree-perks-row-gap: 2.281879688rem;
+        --mainthree-card-height: 8.539300875rem;
+        --mainthree-card-padding-top: 2.245659375rem;
+        --mainthree-card-padding-horizontal: 1.086609375rem;
+        --mainthree-card-padding-bottom: 1.919676562rem;
+        --mainthree-icon-top: -1.15905rem;
+        --mainthree-icon-left: 1.4488125rem;
+        --mainthree-icon-box-size: 2.897625rem;
+        --mainthree-icon-img-size: 1.93175rem;
+        --mainthree-title-font-size: 0.8692875rem;
+        --mainthree-title-mb: 0.217321875rem;
+        --mainthree-text-font-size: 0.72440625rem;
+        --mainthree-text-line-height: 1.1;
+        --mainthree-padding: 2.529065211rem;
+        --mainthree-heading-mb: 3.81092018rem;
+
+        --main-four-info-width: 22.934810536rem;
+        --main-four-info-heading-mb: 0.970052409rem;
+        --main-four-info-h1-mt: 0.970052409rem;
+        --main-four-info-h1-max-width: 19.089245627rem;
+        --main-four-info-p-font-size: 0.73908755rem;
+        --main-four-info-p-mt: 0.970052409rem;
+        --main-four-info-p-max-width: 19.089245627rem;
+        --main-four-btn-width: 17.276171481rem;
+        --main-four-btn-height: 2.494420481rem;
+        --main-four-btn-mt: 0.970052409rem;
+
+        --mainfive-padding-vertical: 2.078683734rem;
+        --mainfive-inner-gap: 1.847718875rem;
+        --mainfive-heading-gap: 0.369543775rem;
+        --mainfive-cards-gap: 1.4781751rem;
+        --mainfive-card-width: 15.901930568rem;
+        --mainfive-card-height: 14.827943972rem;
+        --mainfive-card-padding-top: 2.9563502rem;
+        --mainfive-img-width: 8.002932378rem;
+        --mainfive-img-height: 11.779207828rem;
+        --mainfive-img-top: 1.143276054rem;
+        --mainfive-img-left: 0.831473494rem;
+        --mainfive-price-top: 0.796828765rem;
+        --mainfive-price-right: 0.692894578rem;
+        --mainfive-price-font-size: 1.385789156rem;
+        --mainfive-card-p-left: 9.658950419rem;
+        --mainfive-card-p-width-calc: 4.877053971rem;
+        --mainfive-card-p-gap: 0.069289458rem;
+        --mainfive-card-p-font-size: 0.554315662rem;
+        --mainfive-card-p-line-height: 0.73908755;
+        --mainfive-card-p1-top: 3.418279919rem;
+        --mainfive-card-p2-top: 6.20833542rem;
+        --mainfive-card-p3-top: 9.75595566rem;
+        --mainfive-check-size: 0.73908755rem;
+        --main-five-btn-width: 10.670576503rem;
+        --main-five-btn-height: 2.494420481rem;
+        --main-btn-five-font-size: 0.923859437rem;
+        --jobstwo-btn-font-size: 0.923859437rem;
+
+        --mainseven-padding-vertical: 2.078683734rem;
+        --mainseven-heading-margin-bottom: 1.108631325rem;
+        --mainseven-cards-gap: 1.4781751rem;
+        --mainseven-card-width: 15.901930568rem;
+        --mainseven-card-height: 14.827943972rem;
+        --mainseven-card-padding-top: 1.143276054rem;
+        --mainseven-card-img-margin-right-left: 0.554315662rem;
+        --mainseven-card-img-width: 13.615378461rem;
+        --mainseven-card-img-height: 8.384024395rem;
+        --mainseven-card-h2-margin-top: 0.554315662rem;
+        --mainseven-card-h2-margin-horizontal: 1.108631325rem;
+        --mainseven-card-h2-margin-bottom: 0.230964859rem;
+        --mainseven-card-h2-font-size: 0.923859437rem;
+        --mainseven-card-p-margin-horizontal: 1.108631325rem;
+        --mainseven-card-p-font-size: 0.646701606rem;
+
+        --site-footer-height: 18.223127405rem;
+        --site-footer-inner-padding-top: 2.286552108rem;
+        --site-footer-inner-padding-horizontal: 0rem;
+        --site-footer-col-gap: 2.044039005rem;
+        --footer-nav-gap: 1.044039rem;
+        --footer-nav-a-font-size: 1.108631325rem;
+        --footer-nav-a-stroke-width: 0.092385944rem;
+        --footer-phone-font-size: 1.385789156rem;
+        --footer-phone-stroke-width: 0.046192972rem;
+        --footer-social-gap: 0.415736747rem;
+        --footer-social-img-size: 3.69543775rem;
+        --site-footer-3col-gap: 0.565863905rem;
+
+        --main-all-btn-width: 9.180853161rem;
+        --main-all-btn-height: 2.21726265rem;
+
+        --adresa-two-padding-vertical: 2.7716rem;
+        --adresa-two-map-height: 20.5051rem;
+        --adresa-two-map-margin-top: 0.7391rem;
+        --adresa-two-inner-gap: 0.7391rem;
+        --adresa-two-h3-font-size: 1.3858rem;
+        --adresa-two-h2-font-size: 0.9238rem;
+        --adresa-two-map-link-font-size: 0.5543rem;
+
+        --services-two-padding-vertical: 3.6534rem;
+        --services-two-card-height: 10.5011rem;
+        --services-two-card-padding-vertical: 1.4769rem;
+        --services-two-card-padding-horizontal: 1.3702rem;
+        --services-pic-margin-right: 2.5879rem;
+        --services-pic-img-width: 11.3479rem;
+        --services-title-font-size: 1.4404rem;
+        --services-two-card-details-margin-vertical: 0.6442rem;
+        --services-two-card-details-h2-margin-bottom: 0.5621rem;
+        --services-two-card-details-h2-font-size: 0.8429rem;
+        --services-two-card-details-h3-font-size: 0.4212rem;
+        --services-price-font-size: 1.4043rem;
+
+        --jobs-two-padding-vertical: 2.9571rem;
+        --jobs-two-card-height: 8.0065rem;
+        --jobs-two-card-padding: 1.1089rem;
+        --jobs-two-card-btn-top: 1.1089rem;
+        --jobs-two-card-btn-right: 1.1089rem;
+        --jobs-two-card-btn-width: 12.879rem;
+        --jobs-two-card-btn-height: 2.216rem;
+        --jobs-two-card-btn-font-size: 0.9229rem;
+        --jobs-two-card-text-width: 40.6731rem;
+        --jobs-two-card-text-h1-top: 1.1089rem;
+        --jobs-two-card-text-h1-left: 1.1089rem;
+        --jobs-two-card-text-h1-font-size: 1.4202rem;
+        --jobs-two-card-text-h2-margin-top: 1.8016rem;
+        --jobs-two-card-text-h2-font-size: 0.8311rem;
+        --jobs-two-card-price-font-size: 1.2468rem;
+        --jobs-two-card-price-bottom: 1.1089rem;
+        --jobs-two-card-price-right: 1.1089rem;
+
+        --offers-two-padding-vertical: 2.9571rem;
+        --offers-two-inner-gap: 1.7675rem;
+        --offer-card-width: 24.7817rem;
+        --offer-card-height: 15.1486rem;
+        --offer-card-text-overlay-left: 0.8316rem;
+        --offer-card-text-overlay-max-width: 9.4942rem;
+        --offer-card-title-font-size: 1.9056rem;
+        --offer-card-subtitle-margin-top: 0.4157rem;
+        --offer-card-subtitle-font-size: 0.9699rem;
+        --offer-card-bottom-height: 1.2995rem;
+        --offer-card-more-font-size: 0.7618rem;
+
+        --sub-offer-one-inner-right: 4.675rem;
+        --sub-offer-one-inner-max-width: 22.164rem;
+        --sub-offer-one-title-font-size: 1.9741rem;
+        --sub-offer-one-subtitle-margin-vertical: 1.5765rem;
+        --sub-offer-one-subtitle-font-size: 0.8314rem;
+        --sub-offer-one-list-padding-left: 0.7389rem;
+        --sub-offer-one-list-font-size: 0.8314rem;
+        --sub-offer-one-note-margin-top: 0.7389rem;
+        --sub-offer-one-note-font-size: 0.4155rem;
+    }
+}
+
+@media (max-width: 1160px) {
+    :root {
+        --main-inner-top: 3.3761278rem;
+        --main-info-width: 20.247576543rem;
+        --main-info-heading-font-size: 1.5889141rem;
+        --main-info-heading-mb: 1.515018rem;
+        --adresaone-btn-margin: 1.515018rem auto 0;
+        --main-info-subtitle-font-size: 0.977256rem;
+        --main-info-subtitle-max-width: 16.85143067rem;
+        --main-info-paragraph-line-height: 1.1075;
+
+        --mainthree-heading-font-size: 1.5889141rem;
+        --mainthree-padding: 2.231647142rem;
+        --mainthree-heading-mb: 3.362755967rem;
+
+        --main-four-info-width: 20.237676817rem;
+        --main-four-info-heading-mb: 0.855974246rem;
+        --main-four-info-h1-mt: 0.855974246rem;
+        --main-four-info-h1-max-width: 16.844350341rem;
+        --main-four-info-p-font-size: 0.652170854rem;
+        --main-four-info-p-mt: 0.855974246rem;
+        --main-four-info-p-max-width: 16.844350341rem;
+        --main-four-btn-width: 15.244493715rem;
+        --main-four-btn-height: 2.201076632rem;
+        --main-four-btn-mt: 0.855974246rem;
+        --main-btn-font-size: 0.815213567rem;
+
+        --mainfive-padding-vertical: 1.834230527rem;
+        --mainfive-inner-gap: 1.630427135rem;
+        --mainfive-heading-gap: 0.326085427rem;
+        --mainfive-cards-gap: 1.304341708rem;
+        --mainfive-card-width: 14.031863533rem;
+        --mainfive-card-height: 13.084177761rem;
+        --mainfive-card-padding-top: 2.608683416rem;
+        --mainfive-img-width: 7.06178753rem;
+        --mainfive-img-height: 10.393972987rem;
+        --mainfive-img-top: 1.00882679rem;
+        --mainfive-img-left: 0.733692211rem;
+        --mainfive-price-top: 0.703121702rem;
+        --mainfive-price-right: 0.611410176rem;
+        --mainfive-price-font-size: 1.222820351rem;
+        --mainfive-card-p-left: 8.52305785rem;
+        --mainfive-card-p-width-calc: 4.303512424rem;
+        --mainfive-card-p-gap: 0.061141018rem;
+        --mainfive-card-p-font-size: 0.48912814rem;
+        --mainfive-card-p-line-height: 0.652170854rem;
+        --mainfive-card-p1-top: 3.016290201rem;
+        --mainfive-card-p2-top: 5.478235175rem;
+        --mainfive-card-p3-top: 8.608655274rem;
+        --mainfive-check-size: 0.652170854rem;
+        --main-five-btn-width: 9.415716706rem;
+        --main-five-btn-height: 2.201076632rem;
+        --main-btn-five-font-size: 0.815213567rem;
+        --jobstwo-btn-font-size: 0.815213567rem;
+
+        --mainseven-padding-vertical: 1.834230527rem;
+        --mainseven-heading-margin-bottom: 0.978256281rem;
+        --mainseven-cards-gap: 1.304341708rem;
+        --mainseven-card-width: 14.031863533rem;
+        --mainseven-card-height: 13.084177761rem;
+        --mainseven-card-padding-top: 1.00882679rem;
+        --mainseven-card-img-margin-right-left: 0.48912814rem;
+        --mainseven-card-img-width: 12.014209954rem;
+        --mainseven-card-img-height: 7.398063126rem;
+        --mainseven-card-h2-margin-top: 0.48912814rem;
+        --mainseven-card-h2-margin-horizontal: 0.978256281rem;
+        --mainseven-card-h2-margin-bottom: 0.203803392rem;
+        --mainseven-card-h2-font-size: 0.815213567rem;
+        --mainseven-card-p-margin-horizontal: 0.978256281rem;
+        --mainseven-card-p-font-size: 0.570649497rem;
+
+        --site-footer-height: 16.074620684rem;
+        --site-footer-inner-padding-top: 2.016967614rem;
+        --site-footer-inner-padding-horizontal: 0rem;
+        --site-footer-col-gap: 0.803046806rem;
+        --footer-nav-gap: 1.044039rem;
+        --footer-nav-a-font-size: 0.977923692rem;
+        --footer-nav-a-stroke-width: 0.081493641rem;
+        --footer-phone-font-size: 1.222404615rem;
+        --footer-phone-stroke-width: 0.040746821rem;
+        --footer-social-gap: 0.366721385rem;
+        --footer-social-img-size: 3.259745639rem;
+        --site-footer-3col-gap: 0.499148551rem;
+
+        --main-all-btn-width: 8.098430573rem;
+        --main-all-btn-height: 1.955847384rem;
+
+        --adresa-two-padding-vertical: 2.4448rem;
+        --adresa-two-map-height: 18.0875rem;
+        --adresa-two-map-margin-top: 0.6520rem;
+        --adresa-two-inner-gap: 0.6520rem;
+        --adresa-two-h3-font-size: 1.2224rem;
+        --adresa-two-h2-font-size: 0.8149rem;
+        --adresa-two-map-link-font-size: 0.4889rem;
+
+        --services-two-padding-vertical: 3.2249rem;
+        --services-two-card-height: 9.2612rem;
+        --services-two-card-padding-vertical: 1.3026rem;
+        --services-two-card-padding-horizontal: 1.2083rem;
+        --services-pic-margin-right: 2.2857rem;
+        --services-pic-img-width: 10.0053rem;
+        --services-title-font-size: 1.2718rem;
+        --services-two-card-details-margin-vertical: 0.5683rem;
+        --services-two-card-details-h2-margin-bottom: 0.4960rem;
+        --services-two-card-details-h2-font-size: 0.7435rem;
+        --services-two-card-details-h3-font-size: 0.3715rem;
+        --services-price-font-size: 1.2383rem;
+
+        --jobs-two-padding-vertical: 2.6061rem;
+        --jobs-two-card-height: 7.0611rem;
+        --jobs-two-card-padding: 0.9774rem;
+        --jobs-two-card-btn-top: 0.9774rem;
+        --jobs-two-card-btn-right: 0.9774rem;
+        --jobs-two-card-btn-width: 11.3665rem;
+        --jobs-two-card-btn-height: 1.954rem;
+        --jobs-two-card-btn-font-size: 0.8142rem;
+        --jobs-two-card-text-width: 35.8867rem;
+        --jobs-two-card-text-h1-top: 0.9774rem;
+        --jobs-two-card-text-h1-left: 0.9774rem;
+        --jobs-two-card-text-h1-font-size: 1.2526rem;
+        --jobs-two-card-text-h2-margin-top: 1.5874rem;
+        --jobs-two-card-text-h2-font-size: 0.7329rem;
+        --jobs-two-card-price-font-size: 1.0993rem;
+        --jobs-two-card-price-bottom: 0.9774rem;
+        --jobs-two-card-price-right: 0.9774rem;
+
+        --offers-two-padding-vertical: 2.6076rem;
+        --offers-two-inner-gap: 1.5589rem;
+        --offer-card-width: 21.8644rem;
+        --offer-card-height: 13.3588rem;
+        --offer-card-text-overlay-left: 0.7336rem;
+        --offer-card-text-overlay-max-width: 8.3753rem;
+        --offer-card-title-font-size: 1.6804rem;
+        --offer-card-subtitle-margin-top: 0.3667rem;
+        --offer-card-subtitle-font-size: 0.8563rem;
+        --offer-card-bottom-height: 1.1476rem;
+        --offer-card-more-font-size: 0.6721rem;
+
+        --sub-offer-one-inner-right: 4.124rem;
+        --sub-offer-one-inner-max-width: 19.557rem;
+        --sub-offer-one-title-font-size: 1.7413rem;
+        --sub-offer-one-subtitle-margin-vertical: 1.3915rem;
+        --sub-offer-one-subtitle-font-size: 0.7333rem;
+        --sub-offer-one-list-padding-left: 0.6515rem;
+        --sub-offer-one-list-font-size: 0.7333rem;
+        --sub-offer-one-note-margin-top: 0.6515rem;
+        --sub-offer-one-note-font-size: 0.3664rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --site-header-pt: 0.8125rem;
+        --default-gap: 1.625rem;
+        --header-contacts-gap: 0.177734375rem;
+        --contact-font-size: 0.990234375rem;
+        --menu-toggle-size: 3.427734375rem;
+        --logo-gap: 0.990234375rem;
+        --logo-font-size: 2.8564453125rem;
+        --logo-img-w: 4.959175rem;
+        --logo-img-h: 4.59850625rem;
+        --divider-height: 0.05078125rem;
+
+        --main-inner-top: 4.20849609375rem;
+        --main-info-width: 31.03125rem;
+        --main-info-heading-mb: 1.88525390625rem;
+        --adresaone-btn-margin: 1.88525390625rem auto 0;
+        --main-info-subtitle-max-width: 20.9853515625rem;
+        --main-info-paragraph-line-height: 1.38125;
+
+        --mainthree-card-height: 6.539300875rem;
+        --grid-mainthree: repeat(2, 1fr);
+
+        --adresaone-info-width: 19rem;
+        --adresaone-h2-font-size: 1.5874rem;
+        --adresaone-h2-margin-bottom: 1.5142rem;
+        --adresaone-h1-font-size: 0.9765rem;
+        --adresaone-h1-max-width: 16.8264rem;
+        --adresaone-btn-width: 8.1014rem;
+        --adresaone-btn-height: 1.956rem;
+        --adresaone-btn-font-size: 0.8149rem;
+        --adresaone-btn-margin: 1.5146rem;
+
+        --jobs-two-card-text-width: 30.8867rem;
+
+        --sub-offer-one-bg-image: url("/img/SubOffersMobileBack.svg");
+        --sub-offer-one-bg-height: 497px;
+
+        --sub-offer-one-inner-max-width: 95%;
+        --sub-offer-one-subtitle-color: #000000;
+        --sub-offer-one-inner-width: 95%;
+        --sub-offer-one-inner-padding-vertical: 2rem;
+        --sub-offer-one-inner-position: static;
+        --sub-offer-one-inner-top: auto;
+        --sub-offer-one-inner-transform: none;
+        --sub-offer-one-inner-right: auto;
+        --sub-offer-one-inner-margin: 0 auto;
+
+        --sub-offer-one-title-font-size: 2.671875rem;
+        --sub-offer-one-subtitle-margin-vertical: 2.1328125rem;
+        --sub-offer-one-subtitle-font-size: 1.125rem;
+        --sub-offer-one-list-padding-left: 1rem;
+        --sub-offer-one-list-font-size: 1.125rem;
+        --sub-offer-one-note-margin-top: 1rem;
+        --sub-offer-one-note-font-size: 0.5625rem;
+
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    :root {
+        --services-two-padding-vertical: 2.8644rem;
+        --services-two-card-height: 8.2237rem;
+        --services-two-card-padding-vertical: 1.1574rem;
+        --services-two-card-padding-horizontal: 1.0724rem;
+        --services-pic-margin-right: 2.0293rem;
+        --services-pic-img-width: 8.8782rem;
+        --services-title-font-size: 1.1294rem;
+        --services-two-card-details-margin-vertical: 0.5044rem;
+        --services-two-card-details-h2-margin-bottom: 0.4400rem;
+        --services-two-card-details-h2-font-size: 0.6600rem;
+        --services-two-card-details-h3-font-size: 0.3297rem;
+        --services-price-font-size: 1.0985rem;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+    .header-bottom {
+        display: none;
+    }
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .site-footer {
+        margin-top: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    :root {
+        --main-inner-top: 2.925332rem;
+        --main-info-width: 17.53684228rem;
+        --main-info-heading-font-size: 1.376394rem;
+        --main-info-heading-mb: 1.312868rem;
+        --adresaone-btn-margin: 1.312868rem auto 0;
+        --main-info-subtitle-font-size: 0.846272rem;
+        --main-info-subtitle-max-width: 15.02743434rem;
+        --main-info-paragraph-line-height: 0.95979;
+
+        --mainthree-heading-font-size: 1.376394rem;
+        --mainthree-title-font-size: 0.618498056rem;
+        --mainthree-text-font-size: 0.515415047rem;
+        --mainthree-card-height: 5.539300875rem;
+        --mainthree-padding: 1.934168578rem;
+        --mainthree-heading-mb: 2.914500597rem;
+
+        --main-four-info-width: 17.539994497rem;
+        --main-four-info-heading-mb: 0.741872879rem;
+        --main-four-info-h1-mt: 0.741872879rem;
+        --main-four-info-h1-max-width: 14.598998441rem;
+        --main-four-info-p-font-size: 0.565236479rem;
+        --main-four-info-p-mt: 0.741872879rem;
+        --main-four-info-p-max-width: 14.598998441rem;
+        --main-four-btn-width: 13.212402703rem;
+        --main-four-btn-height: 1.907673117rem;
+        --main-four-btn-mt: 0.741872879rem;
+        --main-btn-font-size: 0.706545599rem;
+
+        --mainfive-padding-vertical: 1.589727598rem;
+        --mainfive-inner-gap: 1.413091198rem;
+        --mainfive-heading-gap: 0.28261824rem;
+        --mainfive-cards-gap: 1.130472958rem;
+        --mainfive-card-width: 12.161416124rem;
+        --mainfive-card-height: 11.340056865rem;
+        --mainfive-card-padding-top: 2.260945917rem;
+        --mainfive-img-width: 6.120451252rem;
+        --mainfive-img-height: 9.008456388rem;
+        --mainfive-img-top: 0.874350179rem;
+        --mainfive-img-left: 0.635891039rem;
+        --mainfive-price-top: 0.609395579rem;
+        --mainfive-price-right: 0.5299092rem;
+        --mainfive-price-font-size: 1.059818398rem;
+        --mainfive-card-p-left: 7.386934239rem;
+        --mainfive-card-p-width-calc: 3.729854218rem;
+        --mainfive-card-p-gap: 0.05299092rem;
+        --mainfive-card-p-font-size: 0.423927359rem;
+        --mainfive-card-p-line-height: 0.565236479rem;
+        --mainfive-card-p1-top: 2.614218717rem;
+        --mainfive-card-p2-top: 4.747986426rem;
+        --mainfive-card-p3-top: 7.461121526rem;
+        --mainfive-check-size: 0.565236479rem;
+        --main-five-btn-width: 8.160601669rem;
+        --main-five-btn-height: 1.907673117rem;
+        --main-btn-five-font-size: 0.706545599rem;
+        --jobstwo-btn-font-size: 0.706545599rem;
+
+        --mainseven-padding-vertical: 1.589727598rem;
+        --mainseven-heading-margin-bottom: 0.847854719rem;
+        --mainseven-cards-gap: 1.130472958rem;
+        --mainseven-card-width: 12.161416124rem;
+        --mainseven-card-height: 11.340056865rem;
+        --mainseven-card-padding-top: 0.874350179rem;
+        --mainseven-card-img-margin-right-left: 0.423927359rem;
+        --mainseven-card-img-width: 10.412715767rem;
+        --mainseven-card-img-height: 6.411901311rem;
+        --mainseven-card-h2-margin-top: 0.423927359rem;
+        --mainseven-card-h2-margin-horizontal: 0.847854719rem;
+        --mainseven-card-h2-margin-bottom: 0.1766364rem;
+        --mainseven-card-h2-font-size: 0.706545599rem;
+        --mainseven-card-p-margin-horizontal: 0.847854719rem;
+        --mainseven-card-p-font-size: 0.494581919rem;
+
+        --site-footer-height: 13.931873747rem;
+        --site-footer-inner-padding-top: 1.748105831rem;
+        --site-footer-inner-padding-horizontal: 0rem;
+        --site-footer-col-gap: 1.562700667rem;
+        --footer-nav-gap: 1.044039rem;
+        --footer-nav-a-font-size: 0.847566464rem;
+        --footer-nav-a-stroke-width: 0.070630539rem;
+        --footer-phone-font-size: 1.05945808rem;
+        --footer-phone-stroke-width: 0.03531527rem;
+        --footer-social-gap: 0.317837424rem;
+        --footer-social-img-size: 2.325221545rem;
+        --site-footer-3col-gap: 0.432612049rem;
+
+        --main-all-btn-width: 7.018909778rem;
+        --main-all-btn-height: 1.695132928rem;
+
+        --adresa-two-padding-vertical: 2.1189rem;
+        --adresa-two-map-height: 15.6764rem;
+        --adresa-two-map-margin-top: 0.5651rem;
+        --adresa-two-inner-gap: 0.5651rem;
+        --adresa-two-h3-font-size: 1.0595rem;
+        --adresa-two-h2-font-size: 0.7063rem;
+        --adresa-two-map-link-font-size: 0.4237rem;
+
+        --adresaone-bg-aspect: 900 / 497;
+        --adresaone-bg-image: url("/img/AdresaMobileBack.svg");
+        --servicesone-bg-image: url("/img/ServicesMobileBack.svg");
+        --jobsone-bg-image: url("/img/JobsMobileBack.svg");
+        --offersone-bg-image: url("/img/OffesrMobileBack.svg");
+        --refuelone-bg-image: url("/img/RefuelMobileBack.svg");
+
+        --adresaone-inner-top: 1.553rem;
+        --adresaone-inner-transform: none;
+
+        --services-two-padding-vertical: 2.4388rem;
+        --services-two-card-height: 7.0044rem;
+        --services-two-card-padding-vertical: 0.9857rem;
+        --services-two-card-padding-horizontal: 0.9126rem;
+        --services-pic-margin-right: 1.7286rem;
+        --services-pic-img-width: 7.5625rem;
+        --services-title-font-size: 0.9622rem;
+        --services-two-card-details-margin-vertical: 0.4298rem;
+        --services-two-card-details-h2-margin-bottom: 0.3749rem;
+        --services-two-card-details-h2-font-size: 0.5626rem;
+        --services-two-card-details-h3-font-size: 0.2809rem;
+        --services-price-font-size: 0.9354rem;
+
+        --jobs-two-padding-vertical: 2.2594rem;
+        --jobs-two-card-height: 6.1182rem;
+        --jobs-two-card-padding: 0.8467rem;
+        --jobs-two-card-btn-top: 0.8467rem;
+        --jobs-two-card-btn-right: 0.8467rem;
+        --jobs-two-card-btn-width: 9.8463rem;
+        --jobs-two-card-btn-height: 1.6927rem;
+        --jobs-two-card-btn-font-size: 0.7054rem;
+        --jobs-two-card-text-width: 26.1145rem;
+        --jobs-two-card-text-h1-top: 0.8467rem;
+        --jobs-two-card-text-h1-left: 0.8467rem;
+        --jobs-two-card-text-h1-font-size: 1.0854rem;
+        --jobs-two-card-text-h2-margin-top: 1.3768rem;
+        --jobs-two-card-text-h2-font-size: 0.6354rem;
+        --jobs-two-card-price-font-size: 0.9524rem;
+        --jobs-two-card-price-bottom: 0.8467rem;
+        --jobs-two-card-price-right: 0.8467rem;
+
+        --offers-two-inner-direction: column;
+        --offers-two-inner-gap: 1rem;
+        --offers-two-inner-align: center;
+
+        --offers-two-padding-vertical: 2.2616rem;
+        --offer-card-width: 33.515625rem;
+        --offer-card-height: 20.484375rem;
+        --offer-card-text-overlay-left: 1.125rem;
+        --offer-card-text-overlay-max-width: 12.84375rem;
+        --offer-card-title-font-size: 2.578125rem;
+        --offer-card-subtitle-margin-top: 0.5625rem;
+        --offer-card-subtitle-font-size: 1.3125rem;
+        --offer-card-bottom-height: 1.7578125rem;
+        --offer-card-more-font-size: 1.03125rem;
+        --sub-offer-one-bg-height: 372px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    :root {
+        --mainfive-padding-vertical: 1.06909181rem;
+        --mainfive-inner-gap: 0.950303831rem;
+        --mainfive-heading-gap: 0.190060766rem;
+        --mainfive-cards-gap: 0.760243064rem;
+        --mainfive-card-width: 8.178552343rem;
+        --mainfive-card-height: 7.626188242rem;
+        --mainfive-card-padding-top: 1.520486129rem;
+        --mainfive-img-width: 4.116003467rem;
+        --mainfive-img-height: 6.058186921rem;
+        --mainfive-img-top: 0.588000495rem;
+        --mainfive-img-left: 0.427636724rem;
+        --mainfive-price-top: 0.409818527rem;
+        --mainfive-price-right: 0.356363937rem;
+        --mainfive-price-font-size: 0.712727873rem;
+        --mainfive-card-p-left: 4.967713276rem;
+        --mainfive-card-p-width-calc: 2.508326962rem;
+        --mainfive-card-p-gap: 0.035636394rem;
+        --mainfive-card-p-font-size: 0.285091149rem;
+        --mainfive-card-p-line-height: 0.380121532rem;
+        --mainfive-card-p1-top: 1.758062087rem;
+        --mainfive-card-p2-top: 3.193020871rem;
+        --mainfive-card-p3-top: 5.017604226rem;
+        --mainfive-check-size: 0.380121532rem;
+        --main-five-btn-width: 5.488004622rem;
+        --main-five-btn-height: 1.282910171rem;
+
+        --mainseven-padding-vertical: 1.06909181rem;
+        --mainseven-heading-margin-bottom: 0.570182299rem;
+        --mainseven-cards-gap: 0.760243064rem;
+        --mainseven-card-width: 8.178552343rem;
+        --mainseven-card-height: 7.626188242rem;
+        --mainseven-card-padding-top: 0.588000495rem;
+        --mainseven-card-img-margin-right-left: 0.285091149rem;
+        --mainseven-card-img-width: 7.002551353rem;
+        --mainseven-card-img-height: 4.312003632rem;
+        --mainseven-card-h2-margin-top: 0.285091149rem;
+        --mainseven-card-h2-margin-horizontal: 0.570182299rem;
+        --mainseven-card-h2-margin-bottom: 0.118787979rem;
+        --mainseven-card-h2-font-size: 0.475151915rem;
+        --mainseven-card-p-margin-horizontal: 0.570182299rem;
+        --mainseven-card-p-font-size: 0.332606341rem;
+
+        --offers-two-padding-vertical: 3.826rem;
+        --offer-card-width: 32.0669rem;
+        --offer-card-height: 19.5906rem;
+        --offer-card-text-overlay-left: 1.0759rem;
+        --offer-card-text-overlay-max-width: 12.2846rem;
+        --offer-card-title-font-size: 2.4653rem;
+        --offer-card-subtitle-margin-top: 0.538rem;
+        --offer-card-subtitle-font-size: 1.2552rem;
+        --offer-card-bottom-height: 1.6818rem;
+        --offer-card-more-font-size: 0.9862rem;
+    }
+
+    .MainFive__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MainSeven__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 590px) {
+    :root {
+        --mainthree-heading-font-size: 0.9294rem;
+        --mainthree-padding: 1.300728369rem;
+        --mainthree-heading-mb: 1.960001651rem;
+        --mainthree-icon-box-size: 2.397625rem;
+        --mainthree-icon-img-size: 1.43175rem;
+        --grid-mainthree: 1fr;
+        --mainthree-card-height: 5.39300875rem;
+        --mainthree-card-padding-top: 1.745659375rem;
+        --mainthree-card-padding-horizontal: 0.844730128rem;
+        --mainthree-card-padding-bottom: 1.492356559rem;
+        --mainthree-text-font-size: 0.515415047rem;
+
+        --main-four-info-width: 14.539994rem;
+    }
+}
+
+
+@media (max-width: 566px) {
+    :root {
+        --mainthree-text-font-size: 0.45515415047rem;
+
+        --services-two-padding-vertical: 1.7993rem;
+        --services-two-card-height: 5.1633rem;
+        --services-two-card-padding-vertical: 0.7273rem;
+        --services-two-card-padding-horizontal: 0.6730rem;
+        --services-pic-margin-right: 1.2757rem;
+        --services-pic-img-width: 5.5780rem;
+        --services-title-font-size: 0.7100rem;
+        --services-two-card-details-margin-vertical: 0.3170rem;
+        --services-two-card-details-h2-margin-bottom: 0.2764rem;
+        --services-two-card-details-h2-font-size: 0.4148rem;
+        --services-two-card-details-h3-font-size: 0.2073rem;
+        --services-price-font-size: 0.6902rem;
+
+        --jobs-two-card-text-width: 21.1145rem;
+
+        --offers-two-padding-vertical: 2.9571rem;
+        --offers-two-inner-gap: 1.7675rem;
+        --offer-card-width: 24.7817rem;
+        --offer-card-height: 15.1486rem;
+        --offer-card-text-overlay-left: 0.8316rem;
+        --offer-card-text-overlay-max-width: 9.4942rem;
+        --offer-card-title-font-size: 1.9056rem;
+        --offer-card-subtitle-margin-top: 0.4157rem;
+        --offer-card-subtitle-font-size: 0.9699rem;
+        --offer-card-bottom-height: 1.2995rem;
+        --offer-card-more-font-size: 0.7618rem;
+    }
+}
+
+@media (max-width: 518px) {
+    :root {
+        --site-header-pt: 0.66015625rem;
+        --default-gap: 1.3203125rem;
+        --header-contacts-gap: 0.1444091796875rem;
+        --contact-font-size: 0.8045654296875rem;
+        --menu-toggle-size: 2.7850341796875rem;
+        --logo-gap: 0.8045654296875rem;
+        --logo-font-size: 2.32086181640625rem;
+        --logo-img-w: 4.0293296875rem;
+        --logo-img-h: 3.736286328125rem;
+        --divider-height: 0.041259765625rem;
+        --main-btn-font-size: 0.506545599rem;
+        --main-btn-five-font-size: 0.506545599rem;
+
+        --main-inner-top: 1.9747rem;
+        --main-info-width: 11.84613696rem;
+        --main-info-heading-font-size: 0.9294rem;
+        --main-info-heading-mb: 0.8869rem;
+        --adresaone-btn-margin: 0.8869rem auto 0;
+        --main-info-subtitle-font-size: 0.5718rem;
+        --main-info-subtitle-max-width: 10.1510319rem;
+        --main-info-paragraph-line-height: 0.6484;
+
+        --main-four-info-width: 10.79565rem;
+        --main-four-info-heading-mb: 0.49891rem;
+        --main-four-info-h1-mt: 0.49891rem;
+        --main-four-info-h1-max-width: 9.81783rem;
+        --main-four-info-p-font-size: 0.37952rem;
+        --main-four-info-p-mt: 0.49891rem;
+        --main-four-info-p-max-width: 9.81783rem;
+        --main-four-btn-width: 8.88434rem;
+        --main-four-btn-height: 1.28291rem;
+        --main-four-btn-mt: 0.49891rem;
+
+        --main-all-btn-width: 4.720216826rem;
+        --main-all-btn-height: 1.139976894rem;
+
+        --services-two-padding-vertical: 1.6472rem;
+        --services-two-card-height: 4.7251rem;
+        --services-two-card-padding-vertical: 0.6658rem;
+        --services-two-card-padding-horizontal: 0.6169rem;
+        --services-pic-margin-right: 1.1677rem;
+        --services-pic-img-width: 5.1053rem;
+        --services-title-font-size: 0.6497rem;
+        --services-two-card-details-margin-vertical: 0.2902rem;
+        --services-two-card-details-h2-margin-bottom: 0.2530rem;
+        --services-two-card-details-h2-font-size: 0.3796rem;
+        --services-two-card-details-h3-font-size: 0.1897rem;
+        --services-price-font-size: 0.6317rem;
+
+        --jobs-two-padding-vertical: 1.5183rem;
+        --jobs-two-card-height: 4.1108rem;
+        --jobs-two-card-padding: 0.5693rem;
+        --jobs-two-card-btn-top: 0.5693rem;
+        --jobs-two-card-btn-right: 0.5693rem;
+        --jobs-two-card-btn-width: 6.6194rem;
+        --jobs-two-card-btn-height: 1.1379rem;
+        --jobs-two-card-btn-font-size: 0.4742rem;
+        --jobs-two-card-text-width: 18.5631rem;
+        --jobs-two-card-text-h1-top: 0.5693rem;
+        --jobs-two-card-text-h1-left: 0.5693rem;
+        --jobs-two-card-text-h1-font-size: 0.7295rem;
+        --jobs-two-card-text-h2-margin-top: 0.9255rem;
+        --jobs-two-card-text-h2-font-size: 0.4273rem;
+        --jobs-two-card-price-font-size: 0.6395rem;
+        --jobs-two-card-price-bottom: 0.5693rem;
+        --jobs-two-card-price-right: 0.5693rem;
+
+        --offers-two-padding-vertical: 2.6076rem;
+        --offers-two-inner-gap: 1.5589rem;
+        --offer-card-width: 21.8644rem;
+        --offer-card-height: 13.3588rem;
+        --offer-card-text-overlay-left: 0.7336rem;
+        --offer-card-text-overlay-max-width: 8.3753rem;
+        --offer-card-title-font-size: 1.6804rem;
+        --offer-card-subtitle-margin-top: 0.3667rem;
+        --offer-card-subtitle-font-size: 0.8563rem;
+        --offer-card-bottom-height: 1.1476rem;
+        --offer-card-more-font-size: 0.6721rem;
+
+        --sub-offer-one-title-font-size: 2.4047rem;
+        --sub-offer-one-subtitle-margin-vertical: 1.9195rem;
+        --sub-offer-one-subtitle-font-size: 1.0125rem;
+        --sub-offer-one-list-padding-left: 0.9rem;
+        --sub-offer-one-list-font-size: 1.0125rem;
+        --sub-offer-one-note-margin-top: 0.9rem;
+        --sub-offer-one-note-font-size: 0.5063rem;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+    .header-bottom {
+        display: none;
+    }
+}
+
+@media (max-width: 403px) {
+    :root {
+        --site-header-pt: 0.5136015625rem;
+        --default-gap: 1.027203125rem;
+        --header-contacts-gap: 0.112350341796875rem;
+        --contact-font-size: 0.625951904296875rem;
+        --menu-toggle-size: 2.166756591796875rem;
+        --logo-gap: 0.625951904296875rem;
+        --logo-font-size: 1.8056304931640625rem;
+        --logo-img-w: 3.134818496875rem;
+        --logo-img-h: 2.90683076328125rem;
+        --divider-height: 0.03210009765625rem;
+
+        --main-inner-top: 1.5363166rem;
+        --main-info-width: 9.21629455488rem;
+        --main-info-heading-font-size: 0.7230732rem;
+        --main-info-heading-mb: 0.6900082000000001rem;
+        --adresaone-btn-margin: 0.6900082000000001rem auto 0;
+        --main-info-subtitle-font-size: 0.4448604rem;
+        --main-info-subtitle-max-width: 7.8975028182rem;
+        --main-info-paragraph-line-height: 0.5044552;
+
+        --mainthree-heading-font-size: 0.7230732rem;
+
+        --main-four-info-width: 8.79565rem;
+        --main-four-info-heading-mb: 0.38815198rem;
+        --main-four-info-h1-mt: 0.38815198rem;
+        --main-four-info-h1-max-width: 7.63827174rem;
+        --main-four-info-p-font-size: 0.29526656rem;
+        --main-four-info-p-mt: 0.38815198rem;
+        --main-four-info-p-max-width: 7.63827174rem;
+        --main-four-btn-width: 6.91201652rem;
+        --main-four-btn-height: 0.99810398rem;
+        --main-four-btn-mt: 0.38815198rem;
+        --main-btn-font-size: 0.3696667rem;
+        --jobstwo-btn-font-size: 0.606545599rem;
+
+        --footer-nav-a-font-size: 0.747566464rem;
+        --footer-phone-font-size: 0.95945808rem;
+
+        --services-two-padding-vertical: 1.2785rem;
+        --services-two-card-height: 3.6682rem;
+        --services-two-card-padding-vertical: 0.5165rem;
+        --services-two-card-padding-horizontal: 0.4786rem;
+        --services-pic-margin-right: 0.9065rem;
+        --services-pic-img-width: 3.9616rem;
+        --services-title-font-size: 0.5039rem;
+        --services-two-card-details-margin-vertical: 0.2251rem;
+        --services-two-card-details-h2-margin-bottom: 0.1963rem;
+        --services-two-card-details-h2-font-size: 0.2946rem;
+        --services-two-card-details-h3-font-size: 0.1472rem;
+        --services-price-font-size: 0.4900rem;
+
+        --jobs-two-card-text-h1-font-size: 0.6695rem;
+        --jobs-two-card-text-width: 12.5631rem;
+
+        --offers-two-padding-vertical: 2.2616rem;
+        --offers-two-inner-gap: 1.3518rem;
+        --offer-card-width: 18.9584rem;
+        --offer-card-height: 11.5744rem;
+        --offer-card-text-overlay-left: 0.6361rem;
+        --offer-card-text-overlay-max-width: 7.2593rem;
+        --offer-card-title-font-size: 1.4568rem;
+        --offer-card-subtitle-margin-top: 0.3178rem;
+        --offer-card-subtitle-font-size: 0.7419rem;
+        --offer-card-bottom-height: 0.9939rem;
+        --offer-card-more-font-size: 0.5826rem;
+
+        --sub-offer-one-title-font-size: 1.9202rem;
+        --sub-offer-one-subtitle-margin-vertical: 1.7276rem;
+        --sub-offer-one-subtitle-font-size: 0.9113rem;
+        --sub-offer-one-list-padding-left: 0.81rem;
+        --sub-offer-one-list-font-size: 0.9113rem;
+        --sub-offer-one-note-margin-top: 0.81rem;
+        --sub-offer-one-note-font-size: 0.4557rem;
+
+    }
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.site-header {
+    padding: var(--site-header-pt) 0 0;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--default-gap);
+    flex-wrap: wrap;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.header-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--header-contacts-gap);
+}
+
+.contact {
+    font-size: var(--contact-font-size);
+    font-weight: 700;
+    color: #FFD700;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.menu-toggle {
+    position: relative;
+    width: var(--menu-toggle-size);
+    height: var(--menu-toggle-size);
+    border: none;
+    background: #E1E1E1;
+    border-radius: 0.875rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle__icon--close {
+    display: none;
+}
+
+.menu-toggle__icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--logo-gap);
+    font-size: var(--logo-font-size);
+    font-weight: 700;
+    font-style: italic;
+    color: #FFD700;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.1875rem #D9BF6B;
+}
+
+header .logo img {
+    width: var(--logo-img-w);
+    height: var(--logo-img-h);
+}
+
+.header-divider {
+    position: relative;
+    width: 100vw;
+    height: var(--divider-height);
+    background-color: #E4E4E4;
+    margin-top: 1rem;
+}
+
+.header-bottom {
+    padding-top: var(--header-bottom-pt);
+    margin-bottom: var(--header-bottom-mb);
+}
+
+header nav ul {
+    font-size: var(--nav-font-size);
+    list-style: none;
+    margin: 0;
+    padding: var(--nav-padding-vertical, 0) 0;
+    display: flex;
+    align-items: center;
+    justify-content: var(--nav-justify-content, space-between);
+    gap: var(--nav-gap);
+    flex-wrap: var(--nav-flex-wrap, wrap);
+    width: 100%;
+}
+
+header nav ul li {
+    flex-shrink: var(--nav-item-flex-shrink, 0);
+}
+
+header nav ul li a {
+    color: var(--nav-link-color, black);
+}
+
+header nav ul li a.active {
+    padding-bottom: var(--nav-link-active-padding-bottom, 0.3125rem);
+    border-bottom: var(--nav-link-active-border-width, 0.3125rem) solid var(--nav-link-active-color, #FFD700);
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    padding-bottom: 0.3125rem;
+    border-bottom: 0.3125rem solid #FFD700;
+}
+
+header nav ul li.btn a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn-bg-color, #fff);
+    color: var(--btn-text-color, #FFD700);
+    border: var(--btn-border-width, 0.125rem) solid currentColor;
+    font-size: var(--btn-font-size, 1.5rem);
+    font-weight: var(--btn-font-weight, 700);
+    border-radius: var(--btn-border-radius, 1.25rem);
+    padding: var(--btn-padding-y, 0.625rem) var(--btn-padding-x, 1.25rem);
+    text-decoration: none;
+    transition: color 0.5s ease, border-color 0.5s ease;
+}
+
+header nav ul li.btn .btn__icon {
+    display: block;
+    width: var(--btn-icon-width, 2.5rem);
+    height: auto;
+    margin-right: var(--btn-icon-margin-right, 0.75rem);
+}
+
+header nav ul li.btn .btn__text {
+    line-height: var(--btn-text-line-height, 1);
+}
+
+header nav ul li.btn a:hover,
+header nav ul li.btn a:focus,
+header nav ul li.btn a:active {
+    color: var(--btn-hover-color, #FFD700) !important;
+    border-color: currentColor;
+}
+
+.MainOne {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.MainOne--inner {
+    position: absolute;
+    top: var(--main-inner-top);
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.MainOne--info {
+    width: var(--main-info-width);
+}
+
+.MainOne--info h2 {
+    color: #FFD700;
+    font-size: var(--main-info-heading-font-size);
+    font-weight: 800;
+    text-shadow: var(--text-shadow);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: var(--main-info-heading-mb);
+}
+
+.MainOne--info h1 {
+    color: white;
+    font-size: var(--main-info-subtitle-font-size);
+    font-weight: 400;
+    margin-top: 0;
+    max-width: var(--main-info-subtitle-max-width);
+}
+
+.MainOne--info p {
+    line-height: var(--main-info-paragraph-line-height);
+}
+
+.MainOne-bg {
+    max-width: 100vw;
+    width: 100%;
+    height: auto;
+}
+
+.MainTwo {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.MainTwo--inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.MainTwo--info {
+    width: var(--main-info-width);
+}
+
+.MainTwo--info h2 {
+    color: black;
+    font-size: var(--main-info-heading-font-size);
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: var(--main-info-heading-mb);
+}
+
+.MainTwo--info h1 {
+    color: black;
+    font-size: var(--main-info-subtitle-font-size);
+    font-weight: 400;
+    margin-top: 0;
+    max-width: var(--main-info-subtitle-max-width);
+}
+
+.MainTwo--info p {
+    line-height: var(--main-info-paragraph-line-height);
+}
+
+.MainTwo-bg {
+    max-width: 100vw;
+    width: 100%;
+    height: auto;
+}
+
+.MainThree {
+    padding: var(--mainthree-padding) 0;
+    background: #fff;
+}
+
+.MainThree__heading {
+    font-size: var(--mainthree-heading-font-size);
+    font-weight: 700;
+    margin-bottom: var(--mainthree-heading-mb);
+    color: #000;
+}
+
+.MainThree__perks {
+    display: grid;
+    grid-template-columns: var(--grid-mainthree);
+    column-gap: var(--mainthree-perks-column-gap);
+    row-gap: var(--mainthree-perks-row-gap);
+}
+
+.MainThree__card {
+    position: relative;
+    background: #F9F9F9;
+    border: 1px solid #E3E3E3;
+    height: var(--mainthree-card-height);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    overflow: visible;
+    padding:
+        var(--mainthree-card-padding-top) var(--mainthree-card-padding-horizontal) var(--mainthree-card-padding-bottom);
+}
+
+.MainThree__icon {
+    position: absolute;
+    top: var(--mainthree-icon-top);
+    left: var(--mainthree-icon-left);
+    width: var(--mainthree-icon-box-size);
+    height: var(--mainthree-icon-box-size);
+    background: #fff;
+    border: 1px solid #E3E3E3;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainThree__icon img {
+    width: var(--mainthree-icon-img-size);
+    height: var(--mainthree-icon-img-size);
+    object-fit: contain;
+}
+
+.MainThree__body {
+    margin-left: 0;
+}
+
+.MainThree__title {
+    font-size: var(--mainthree-title-font-size);
+    font-weight: 700;
+    margin: 0 0 var(--mainthree-title-mb);
+}
+
+.MainThree__text {
+    font-size: var(--mainthree-text-font-size);
+    font-weight: 400;
+    line-height: var(--mainthree-text-line-height);
+    margin: 0;
+}
+
+.MainFour {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+
+.MainFour-bg img {
+    max-width: 100vw;
+    width: 100%;
+    height: auto;
+}
+
+.MainFour--inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+.MainFour--info {
+    width: var(--main-four-info-width);
+    margin-left: auto;
+}
+
+.MainFour--info h2 {
+    color: white;
+    font-size: var(--main-info-heading-font-size);
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: var(--main-four-info-heading-mb);
+    max-width: var(--main-four-info-h1-max-width);
+}
+
+.MainFour--info h1 {
+    color: white;
+    font-size: var(--main-info-subtitle-font-size);
+    font-weight: 400;
+    margin-top: var(--main-four-info-h1-mt);
+    max-width: var(--main-four-info-h1-max-width);
+}
+
+.MainFour--info p {
+    color: white;
+    font-size: var(--main-four-info-p-font-size);
+    font-weight: 400;
+    margin-top: var(--main-four-info-p-mt);
+    max-width: var(--main-four-info-p-max-width);
+}
+
+.MainFour__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--main-four-btn-width);
+    height: var(--main-four-btn-height);
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--main-btn-font-size);
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin-top: var(--main-four-btn-mt);
+}
+
+.MainFour__btn:hover {
+    opacity: 0.95;
+}
+
+.MainFive {
+    padding: var(--mainfive-padding-vertical) 0;
+    background: #ffffff;
+}
+
+.MainFive--inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--mainfive-inner-gap);
+}
+
+.MainFive__heading {
+    font-size: var(--main-info-heading-font-size);
+    font-weight: 800;
+    line-height: 1.1;
+    display: flex;
+    align-items: baseline;
+    gap: var(--mainfive-heading-gap);
+}
+
+.MainFive__highlight {
+    background: linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 49%,
+            rgba(219, 113, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.MainFive__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--mainfive-cards-gap);
+}
+
+.MainFive__card {
+    position: relative;
+    width: var(--mainfive-card-width);
+    height: var(--mainfive-card-height);
+    border: 0.125rem solid transparent;
+    border-radius: var(--border-radius);
+    background-image:
+        linear-gradient(#fff, #fff),
+        linear-gradient(180deg, rgba(246, 190, 28, 1) 0%, rgba(219, 113, 115, 1) 100%);
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: var(--mainfive-card-padding-top);
+    overflow: hidden;
+}
+
+.MainFive__img {
+    position: absolute;
+    width: var(--mainfive-img-width);
+    height: var(--mainfive-img-height);
+    top: var(--mainfive-img-top);
+    left: var(--mainfive-img-left);
+    z-index: 0;
+}
+
+.MainFive__price {
+    position: absolute;
+    top: var(--mainfive-price-top);
+    right: var(--mainfive-price-right);
+    font-size: var(--mainfive-price-font-size);
+    font-weight: 700;
+    background: linear-gradient(95deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(246, 190, 28, 1) 10%,
+            rgba(219, 113, 115, 1) 61%,
+            rgba(219, 113, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.MainFive__card p {
+    position: absolute;
+    left: var(--mainfive-card-p-left);
+    width: var(--mainfive-card-p-width-calc);
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--mainfive-card-p-gap);
+    font-size: var(--mainfive-card-p-font-size);
+    font-weight: 400;
+    line-height: var(--mainfive-card-p-line-height);
+    color: #000;
+    z-index: 1;
+}
+
+.MainFive__card p:nth-of-type(1) {
+    top: var(--mainfive-card-p1-top);
+}
+
+.MainFive__card p:nth-of-type(2) {
+    top: var(--mainfive-card-p2-top);
+}
+
+.MainFive__card p:nth-of-type(3) {
+    top: var(--mainfive-card-p3-top);
+}
+
+.MainFive__check {
+    flex-shrink: 0;
+    width: var(--mainfive-check-size);
+    height: var(--mainfive-check-size);
+    margin-top: 0;
+}
+
+.MainFive__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--main-five-btn-width);
+    height: var(--main-five-btn-height);
+    background: linear-gradient(90deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--main-btn-five-font-size);
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+}
+
+.MainFour__btn:hover {
+    opacity: 0.95;
+}
+
+.MainSix {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.MainSix--inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.MainSix--info {
+    width: var(--main-info-width);
+}
+
+.MainSix--info h2 {
+    color: white;
+    font-size: var(--main-info-heading-font-size);
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: var(--main-info-heading-mb);
+}
+
+.MainSix--info h1 {
+    color: white;
+    font-size: var(--main-info-subtitle-font-size);
+    font-weight: 400;
+    margin-top: 0;
+    max-width: var(--main-info-subtitle-max-width);
+}
+
+.MainSix--info p {
+    line-height: var(--main-info-paragraph-line-height);
+}
+
+.MainSix-bg {
+    max-width: 100vw;
+    width: 100%;
+    height: auto;
+}
+
+.MainSix__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--main-five-btn-width);
+    height: var(--main-five-btn-height);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--main-btn-font-size);
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+}
+
+.MainSix__btn:hover {
+    opacity: 0.95;
+}
+
+.MainSeven {
+    padding: var(--mainseven-padding-vertical) 0;
+    background: #ffffff;
+}
+
+.MainSeven__inner {
+    margin: 0 auto;
+}
+
+.MainSeven__heading {
+    font-size: var(--main-info-heading-font-size);
+    font-weight: 800;
+    line-height: 1.1;
+    display: flex;
+    align-items: baseline;
+    gap: var(--mainfive-heading-gap);
+    margin-bottom: var(--mainseven-heading-margin-bottom);
+}
+
+.MainSeven__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--mainseven-cards-gap);
+}
+
+.MainSeven__card {
+    width: var(--mainseven-card-width);
+    height: var(--mainseven-card-height);
+    background: linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    position: relative;
+    padding-top: var(--mainseven-card-padding-top);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.MainSeven__card img {
+    margin: 0 auto 0;
+    width: var(--mainseven-card-img-width);
+    height: var(--mainseven-card-img-height);
+    object-fit: contain;
+}
+
+.MainSeven__card h2 {
+    margin: var(--mainseven-card-h2-margin-top) var(--mainseven-card-h2-margin-horizontal) var(--mainseven-card-h2-margin-bottom);
+    font-size: var(--mainseven-card-h2-font-size);
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+}
+
+.MainSeven__card p {
+    margin: 0 var(--mainseven-card-p-margin-horizontal) 0;
+    font-size: var(--mainseven-card-p-font-size);
+    font-weight: 400;
+    line-height: 1.125;
+    color: #fff;
+    text-align: left;
+}
+
+.site-footer {
+    width: var(--site-footer-width);
+    height: var(--site-footer-height);
+    background: #212121;
+}
+
+.site-footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--site-footer-inner-padding-top) var(--site-footer-inner-padding-horizontal) 0 var(--site-footer-inner-padding-horizontal);
+}
+
+.site-footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--site-footer-col-gap);
+}
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--logo-gap);
+    font-size: var(--logo-font-size);
+    font-weight: 700;
+    font-style: italic;
+    color: #FFD700;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.1875rem #D9BF6B;
+}
+
+.footer-logo img {
+    width: var(--logo-img-w);
+    height: var(--logo-img-h);
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--footer-nav-gap);
+}
+
+.footer-nav a {
+    display: block;
+    font-size: var(--footer-nav-a-font-size);
+    font-weight: 400;
+    color: #FFD700;
+    paint-order: stroke fill;
+    -webkit-text-stroke: var(--footer-nav-a-stroke-width) #D9BF6B;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.footer-phone {
+    font-size: var(--footer-phone-font-size);
+    font-weight: 400;
+    color: #FFF;
+    paint-order: stroke fill;
+    -webkit-text-stroke: var(--footer-phone-stroke-width) #FFF;
+}
+
+.site-footer__col:nth-child(2) .footer-nav a {
+    color: #FFF;
+    -webkit-text-stroke: 0.0625rem #FFF;
+}
+
+.footer-contact-title {
+    font-size: var(--footer-phone-font-size);
+    font-weight: 400;
+    color: white;
+    -webkit-text-stroke: var(--footer-phone-stroke-width) #FFF;
+}
+
+.footer-social {
+    display: flex;
+    gap: var(--footer-social-gap);
+    margin-top: var(--footer-social-margin-top);
+}
+
+.site-footer__col:nth-child(2) {
+    justify-content: space-between;
+}
+
+.footer-social img {
+    width: var(--footer-social-img-size);
+    height: var(--footer-social-img-size);
+    object-fit: contain;
+}
+
+.site-footer__col:nth-child(3) {
+    gap: var(--site-footer-3col-gap);
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    :root {
+        --site-footer-inner-padding-top: 1rem;
+        --site-footer-inner-padding-horizontal: 1rem;
+        --site-footer-col-gap: 0.5rem;
+        --footer-social-gap: 0.5rem;
+        --footer-social-margin-top: 0;
+        --footer-nav-gap: 0.5rem;
+        --site-footer-height: 500px;
+    }
+
+    .site-footer {
+        height: var(--site-footer-height);
+    }
+
+    .site-footer__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: var(--logo-gap);
+        justify-content: center;
+    }
+
+    .site-footer__col:nth-child(1),
+    .site-footer__col:nth-child(2) {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .site-footer__col:nth-child(1) .footer-nav,
+    .site-footer__col:nth-child(2) .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--footer-nav-gap);
+    }
+
+    .footer-phone {
+        font-size: var(--footer-phone-font-size);
+        color: #fff;
+    }
+
+    .site-footer__col:nth-child(2) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .site-footer__col:nth-child(3) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .footer-social {
+        margin-top: 0;
+    }
+}
+
+
+.AdresaOne {
+    position: relative;
+}
+
+.AdresaOne-bg {
+    width: 100%;
+    height: 497px;
+    aspect-ratio: var(--adresaone-bg-aspect);
+    background-image: var(--adresaone-bg-image);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.AdresaOne--inner {
+    position: absolute;
+    top: var(--adresaone-inner-top);
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: var(--adresaone-inner-transform);
+}
+
+.AdresaOne--info {
+    width: var(--adresaone-info-width);
+    text-align: left;
+    margin-left: 0;
+}
+
+.AdresaOne--info h2 {
+    color: white;
+    font-size: var(--adresaone-h2-font-size);
+    margin-bottom: var(--adresaone-h2-margin-bottom);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.AdresaOne--info h1 {
+    color: white;
+    font-size: var(--adresaone-h1-font-size);
+    font-weight: 400;
+    margin: 0 0 var(--adresaone-h2-margin-bottom) 0;
+    max-width: var(--adresaone-h1-max-width);
+    line-height: 1.2;
+}
+
+.AdresaOne__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--adresaone-btn-width);
+    height: var(--adresaone-btn-height);
+    background: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--adresaone-btn-font-size);
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: var(--adresaone-btn-margin), 0, 0;
+    line-height: 1;
+}
+
+.AdresaOne__btn:hover {
+    opacity: 0.95;
+}
+
+.AdresaTwo {
+    padding: var(--adresa-two-padding-vertical) 0;
+    background: #fff;
+}
+
+.AdresaTwo--inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--adresa-two-inner-gap);
+}
+
+.AdresaTwo--inner h3 {
+    font-size: var(--adresa-two-h3-font-size);
+    font-weight: 800;
+    color: #000;
+    margin: 0;
+}
+
+.AdresaTwo--inner h2 {
+    font-size: var(--adresa-two-h2-font-size);
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+}
+
+.AdresaTwo__map {
+    width: var(--adresa-two-map-width);
+    height: var(--adresa-two-map-height);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin-top: var(--adresa-two-map-margin-top);
+}
+
+.AdresaTwo__map-link {
+    position: absolute;
+    left: 0;
+    font-size: var(--adresa-two-map-link-font-size);
+    color: #000;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.AdresaTwo__map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.ServicesOne {
+    position: relative;
+}
+
+.ServicesOne-bg {
+    width: 100%;
+    height: 497px;
+    aspect-ratio: var(--adresaone-bg-aspect);
+    background-image: var(--servicesone-bg-image);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.ServicesOne--inner {
+    position: absolute;
+    top: var(--adresaone-inner-top);
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: var(--adresaone-inner-transform);
+}
+
+.ServicesOne--info {
+    width: var(--adresaone-info-width);
+    text-align: left;
+    margin-left: 0;
+}
+
+.ServicesOne--info h2 {
+    color: white;
+    font-size: var(--adresaone-h2-font-size);
+    margin-bottom: var(--adresaone-h2-margin-bottom);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.ServicesOne--info h1 {
+    color: white;
+    font-size: var(--adresaone-h1-font-size);
+    font-weight: 400;
+    margin: 0 0 var(--adresaone-h2-margin-bottom) 0;
+    max-width: var(--adresaone-h1-max-width);
+    line-height: 1.2;
+}
+
+.ServicesOne__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--adresaone-btn-width);
+    height: var(--adresaone-btn-height);
+    background: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--adresaone-btn-font-size);
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: var(--adresaone-btn-margin), 0, 0;
+    line-height: 1;
+}
+
+.ServicesOne__btn:hover {
+    opacity: 0.95;
+}
+
+.ServicesTwo {
+    padding: var(--services-two-padding-vertical) 0;
+    background: #ffffff;
+}
+
+.ServicesTwo--inner {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ServicesTwoCards {
+    display: flex;
+    justify-content: center;
+}
+
+.ServicesTwoCard {
+    position: relative;
+    width: 100%;
+    height: var(--services-two-card-height);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--services-two-card-padding-vertical) var(--services-two-card-padding-horizontal);
+    border: 0.125rem solid transparent;
+    border-radius: var(--border-radius);
+    background-image:
+        linear-gradient(#fff, #fff),
+        linear-gradient(180deg, rgba(246, 190, 28, 1) 0%, rgba(219, 113, 115, 1) 100%);
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+}
+
+.ServicesPic {
+    margin-right: var(--services-pic-margin-right);
+}
+
+.ServicesPic img {
+    display: block;
+    width: var(--services-pic-img-width);
+    height: auto;
+}
+
+.ServicesTwoCard__text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.ServicesTitle {
+    margin: 0 0 0;
+    font-size: var(--services-title-font-size);
+    font-weight: 800;
+    color: #000;
+    line-height: 1.2;
+}
+
+.ServicesTwoCard__details {
+    margin: var(--services-two-card-details-margin-vertical) 0;
+}
+
+.ServicesTwoCard__details h2 {
+    margin: 0 0 var(--services-two-card-details-h2-margin-bottom) 0;
+    font-size: var(--services-two-card-details-h2-font-size);
+    font-weight: 500;
+    color: #000;
+    line-height: 1.4;
+}
+
+.ServicesTwoCard__details h3 {
+    margin: 0;
+    font-size: var(--services-two-card-details-h3-font-size);
+    font-weight: 400;
+    color: #000;
+    opacity: 0.5;
+    line-height: 1.2;
+}
+
+.ServicesTwoCard__price {
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+.ServicesPrice {
+    margin: 0 0 0;
+    font-size: var(--services-price-font-size);
+    font-weight: 800;
+    background: linear-gradient(95deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(246, 190, 28, 1) 10%,
+            rgba(219, 113, 115, 1) 61%,
+            rgba(219, 113, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.JobsOne {
+    position: relative;
+}
+
+.JobsOne-bg {
+    width: 100%;
+    height: 31.0625rem;
+    aspect-ratio: var(--adresaone-bg-aspect);
+    background-image: var(--jobsone-bg-image);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.JobsOne--inner {
+    position: absolute;
+    top: var(--adresaone-inner-top);
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: var(--adresaone-inner-transform);
+}
+
+.JobsOne--info {
+    width: var(--adresaone-info-width);
+    text-align: left;
+    margin-left: 0;
+}
+
+.JobsOne--info h2 {
+    color: white;
+    font-size: var(--adresaone-h2-font-size);
+    margin-bottom: var(--adresaone-h2-margin-bottom);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.JobsOne--info h1 {
+    color: white;
+    font-size: var(--adresaone-h1-font-size);
+    font-weight: 400;
+    margin: 0 0 var(--adresaone-h2-margin-bottom) 0;
+    max-width: var(--adresaone-h1-max-width);
+    line-height: 1.2;
+}
+
+.JobsOne__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--adresaone-btn-width);
+    height: var(--adresaone-btn-height);
+    background: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--adresaone-btn-font-size);
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: var(--adresaone-btn-margin), 0, 0;
+    line-height: 1;
+}
+
+.JobsOne__btn:hover {
+    opacity: 0.95;
+}
+
+
+.JobsTwo {
+    padding: var(--jobs-two-padding-vertical) 0;
+    background-color: #ffffff;
+}
+
+.JobsTwo--inner {
+    margin: 0 auto;
+}
+
+.JobsTwoCard {
+    position: relative;
+    width: 100%;
+    height: var(--jobs-two-card-height);
+    background-color: #fff;
+    border: 0.125rem solid transparent;
+    border-radius: var(--border-radius);
+    background-image:
+        linear-gradient(#fff, #fff),
+        linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    padding: var(--jobs-two-card-padding);
+    display: flex;
+    align-items: center;
+}
+
+.JobsTwoCard__btn {
+    position: absolute;
+    top: var(--jobs-two-card-btn-top);
+    right: var(--jobs-two-card-btn-right);
+    width: var(--jobs-two-card-btn-width);
+    height: var(--jobs-two-card-btn-height);
+    background: linear-gradient(90deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--jobstwo-btn-font-size);
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    transition: opacity 0.2s;
+}
+
+.JobsTwoCard__btn:hover {
+    opacity: 0.95;
+}
+
+.JobsTwoCard__text {
+    width: var(--jobs-two-card-text-width);
+}
+
+.JobsTwoCard__text h1 {
+    position: absolute;
+    top: var(--jobs-two-card-text-h1-top);
+    left: var(--jobs-two-card-text-h1-left);
+    margin: 0;
+    font-size: var(--jobs-two-card-text-h1-font-size);
+    font-weight: 800;
+    color: #000;
+}
+
+.JobsTwoCard__text h2 {
+    margin-top: var(--jobs-two-card-text-h2-margin-top);
+    font-size: var(--jobs-two-card-text-h2-font-size);
+    font-weight: 400;
+    color: #000;
+}
+
+.JobsTwoCard__price {
+    margin: 0;
+    font-size: var(--jobs-two-card-price-font-size);
+    font-weight: 800;
+    background: linear-gradient(95deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(246, 190, 28, 1) 10%,
+            rgba(219, 113, 115, 1) 61%,
+            rgba(219, 113, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    bottom: var(--jobs-two-card-price-bottom);
+    right: var(--jobs-two-card-price-right);
+}
+
+.OffersOne {
+    position: relative;
+}
+
+.OffersOne-bg {
+    width: 100%;
+    height: 31.0625rem;
+    aspect-ratio: var(--adresaone-bg-aspect);
+    background-image: var(--offersone-bg-image);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.OffersOne--inner {
+    position: absolute;
+    top: var(--adresaone-inner-top);
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: var(--adresaone-inner-transform);
+}
+
+.OffersOne--info {
+    width: var(--adresaone-info-width);
+    text-align: left;
+    margin-left: 0;
+}
+
+.OffersOne--info h2 {
+    color: white;
+    font-size: var(--adresaone-h2-font-size);
+    margin-bottom: var(--adresaone-h2-margin-bottom);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.OffersOne--info h1 {
+    color: white;
+    font-size: var(--adresaone-h1-font-size);
+    font-weight: 400;
+    margin: 0 0 var(--adresaone-h2-margin-bottom) 0;
+    max-width: var(--adresaone-h1-max-width);
+    line-height: 1.2;
+}
+
+.OffersOne__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--adresaone-btn-width);
+    height: var(--adresaone-btn-height);
+    background: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--adresaone-btn-font-size);
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: var(--adresaone-btn-margin), 0, 0;
+    line-height: 1;
+}
+
+.OffersOne__btn:hover {
+    opacity: 0.95;
+}
+
+.OffersTwo {
+    padding: var(--offers-two-padding-vertical) 0;
+    background: #ffffff;
+}
+
+.OffersTwo__inner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: var(--offers-two-inner-align);
+    gap: var(--offers-two-inner-gap);
+    flex-direction: var(--offers-two-inner-direction);
+}
+
+.OfferCard {
+    position: relative;
+    width: var(--offer-card-width);
+    height: var(--offer-card-height);
+    border: 0.125rem solid transparent;
+    border-radius: var(--border-radius);
+    background-image:
+        linear-gradient(#fff, #fff),
+        linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.OfferCard__top {
+    position: relative;
+    flex: 1;
+}
+
+.OfferCard__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 0.875rem;
+    border-top-left-radius: 0;
+    object-fit: cover;
+    display: block;
+}
+
+.OfferCard__text-overlay {
+    position: absolute;
+    top: 50%;
+    left: var(--offer-card-text-overlay-left);
+    transform: translateY(-50%);
+    max-width: var(--offer-card-text-overlay-max-width);
+    color: #fff;
+    z-index: 1;
+}
+
+.OfferCard__title {
+    margin: 0;
+    font-size: var(--offer-card-title-font-size);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.OfferCard__subtitle {
+    margin: var(--offer-card-subtitle-margin-top) 0 0;
+    font-size: var(--offer-card-subtitle-font-size);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.OfferCard__bottom {
+    position: relative;
+    height: var(--offer-card-bottom-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OfferCard__bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.0625rem;
+    background: linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+}
+
+.OfferCard__more {
+    position: relative;
+    font-size: var(--offer-card-more-font-size);
+    font-weight: 800;
+    background: linear-gradient(95deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(246, 190, 28, 1) 10%,
+            rgba(219, 113, 115, 1) 61%,
+            rgba(219, 113, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.SubOfferOne {
+    position: relative;
+    background-color: #D96B7A;
+}
+
+.SubOfferOne-bg {
+    width: 100%;
+    height: var(--sub-offer-one-bg-height);
+    aspect-ratio: var(--adresaone-bg-aspect);
+    background-image: var(--sub-offer-one-bg-image);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.SubOfferOne__inner {
+    position: var(--sub-offer-one-inner-position);
+    top: var(--sub-offer-one-inner-top);
+    right: var(--sub-offer-one-inner-right);
+    transform: var(--sub-offer-one-inner-transform);
+    margin: var(--sub-offer-one-inner-margin);
+    max-width: var(--sub-offer-one-inner-max-width);
+    width: var(--sub-offer-one-inner-width);
+    padding: var(--sub-offer-one-inner-padding-vertical) 0;
+    color: #fff;
+}
+
+.SubOfferOne__title {
+    margin: 0;
+    font-size: var(--sub-offer-one-title-font-size);
+    font-weight: 800;
+    color: #FFD700;
+    line-height: 1.2;
+    text-shadow: 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.25);
+}
+
+.SubOfferOne__subtitle {
+    margin: var(--sub-offer-one-subtitle-margin-vertical) 0;
+    font-size: var(--sub-offer-one-subtitle-font-size);
+    font-weight: 400;
+    color: var(--sub-offer-one-subtitle-color);
+    line-height: 1.2;
+    text-shadow: 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.25);
+}
+
+.SubOfferOne__list {
+    margin: 0;
+    padding-left: var(--sub-offer-one-list-padding-left);
+    list-style: disc outside;
+    color: #FFD700;
+    font-size: var(--sub-offer-one-list-font-size);
+    font-weight: 500;
+    line-height: 1.2;
+    text-shadow: 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.25);
+}
+
+.SubOfferOne__list li:first-child {
+    list-style-type: none;
+}
+
+.SubOfferOne__note {
+    margin: var(--sub-offer-one-note-margin-top) 0 0;
+    font-size: var(--sub-offer-one-note-font-size);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.2;
+    text-shadow: 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.25);
+}
+
+* {
+    outline: 1px dashed red !important;
+}
+
+.RefuelOne {
+    position: relative;
+}
+
+.RefuelOne-bg {
+    width: 100%;
+    height: 31.0625rem;
+    aspect-ratio: var(--adresaone-bg-aspect);
+    background-image: var(--refuelone-bg-image);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.RefuelOne--inner {
+    position: absolute;
+    top: var(--adresaone-inner-top);
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: var(--adresaone-inner-transform);
+}
+
+.RefuelOne--info {
+    width: var(--adresaone-info-width);
+    text-align: left;
+    margin-left: 0;
+}
+
+.RefuelOne--info h2 {
+    color: white;
+    font-size: var(--adresaone-h2-font-size);
+    margin-bottom: var(--adresaone-h2-margin-bottom);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.RefuelOne--info h1 {
+    color: white;
+    font-size: var(--adresaone-h1-font-size);
+    font-weight: 400;
+    margin: 0 0 var(--adresaone-h2-margin-bottom) 0;
+    max-width: var(--adresaone-h1-max-width);
+    line-height: 1.2;
+}
+
+.RefuelOne__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--adresaone-btn-width);
+    height: var(--adresaone-btn-height);
+    background: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--adresaone-btn-font-size);
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin: var(--adresaone-btn-margin), 0, 0;
+    line-height: 1;
+}
+
+.RefuelOne__btn:hover {
+    opacity: 0.95;
+}
+
+.RefuelTwo {
+    padding: 4rem 0;
+    background: #ffffff;
+}
+
+.RefuelTwo--inner {
+    width: 100%;
+    margin: var(--refuel-two-inner-margin);
+}
+
+.RefuelTwo__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--refuel-two-cards-gap);
+    justify-content: space-between;
+}
+
+.RefuelTwo__card {
+    position: relative;
+    width: var(--refuel-two-card-width);
+    height: var(--refuel-two-card-height);
+    border: 0.125rem solid transparent;
+    border-radius: 0.875rem;
+    background-image:
+        linear-gradient(#fff, #fff),
+        linear-gradient(180deg, rgba(246, 190, 28, 1) 0%, rgba(219, 113, 115, 1) 100%);
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.RefuelTwo__top {
+    position: relative;
+    width: 100%;
+    height: var(--refuel-two-top-height);
+    background: linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+}
+
+.RefuelTwo__icon {
+    position: absolute;
+    top: var(--refuel-two-icon-top);
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--refuel-two-icon-width);
+    height: var(--refuel-two-icon-height);
+    object-fit: contain;
+}
+
+.RefuelTwo__desc-box {
+    position: absolute;
+    top: var(--refuel-two-desc-box-top);
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--refuel-two-desc-box-width);
+    height: var(--refuel-two-desc-box-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RefuelTwo__desc-text {
+    margin: 0;
+    font-size: var(--refuel-two-desc-text-font-size);
+    font-weight: 500;
+    line-height: 1;
+    color: #000;
+}
+
+.RefuelTwo__bottom {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: var(--refuel-two-bottom-height);
+    background: #fff;
+    display: flex;
+}
+
+.RefuelTwo__bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(219, 113, 115, 1) 100%);
+    transform: translateX(-0.5px);
+    z-index: 2;
+}
+
+.RefuelTwo__price-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RefuelTwo__price {
+    margin: 0;
+    font-size: var(--refuel-two-price-font-size);
+    font-weight: 800;
+    background: linear-gradient(95deg,
+            rgba(246, 190, 28, 1) 0%,
+            rgba(246, 190, 28, 1) 10%,
+            rgba(219, 113, 115, 1) 61%,
+            rgba(219, 113, 115, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.RefuelTwo__meter-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RefuelTwo__meter {
+    width: var(--refuel-two-meter-width);
+    height: var(--refuel-two-meter-height);
+    object-fit: contain;
+}

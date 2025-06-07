@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Акции EuroOil</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="container site-header">
+        <div class="header-top">
+          <span class="logo">
+            EuroOil
+            <img src="img/logo.svg" width="100" height="90" alt="EuroOilLogo" />
+          </span>
+          <!-- В этот блок теперь попадают и контакты, и кнопка -->
+          <div class="header-controls">
+            <div class="header-contacts">
+              <div class="contact contact--phone">8 (707) 249-34-56</div>
+              <div class="contact contact--email">euroil@mail.ru</div>
+            </div>
+            <button
+              class="menu-toggle"
+              aria-expanded="false"
+              aria-label="Открыть меню"
+            >
+              <img
+                src="img/HeaderTopRightDefault.svg"
+                alt=""
+                class="menu-toggle__icon menu-toggle__icon--open"
+              />
+              <img
+                src="img/HeaderTopRightClose.svg"
+                alt=""
+                class="menu-toggle__icon menu-toggle__icon--close"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="header-divider"></div>
+
+        <div class="header-bottom">
+          <nav>
+            <ul>
+              <li class="btn">
+                <a href="refuel.html">
+                  <img
+                    src="img/BenzinIconka.svg"
+                    alt="Иконка канистры"
+                    class="btn__icon"
+                  />
+                  <span class="btn__text">Заправиться</span>
+                </a>
+              </li>
+              <li><a href="/index.html">Главная</a></li>
+              <li><a href="/adresa.html">Адреса</a></li>
+              <li><a href="/services.html">Услуги</a></li>
+              <li><a href="/offers.html" class="active">Акции</a></li>
+              <li><a href="/jobs.html">Трудоустройство</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="OffersOne">
+        <div class="container OffersOne--inner">
+          <div>
+            <h1>Акции и предложения</h1>
+            <h2>Узнайте о текущих скидках и бонусах</h2>
+            <button>К акциям</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="OffersTwo">
+        <div class="container OffersTwo__inner">
+          <!-- Карточка 1 -->
+          <div class="OfferCard">
+            <!-- Верхняя часть: картинка (с обрезкой по рамке) и поверх неё текст -->
+            <div class="OfferCard__top">
+              <img
+                src="img/OffersTwoBlockOnePic.svg"
+                alt="Утренний драйв"
+                class="OfferCard__image"
+              />
+              <div class="OfferCard__text-overlay">
+                <h2 class="OfferCard__title">Ваш утренний драйв</h2>
+                <p class="OfferCard__subtitle">Скидка 5 ₸ за литр бензина</p>
+              </div>
+            </div>
+            <!-- Нижняя часть: горизонтальная линия на 40px отступом от низа и надпись «Подробнее» -->
+            <div class="OfferCard__bottom">
+              <a href="/suboffer.html" class="OfferCard__more">Подробнее</a>
+            </div>
+          </div>
+
+          <!-- Карточка 2 (аналогичная структура, только картинка с другим именем/цветом) -->
+          <div class="OfferCard">
+            <div class="OfferCard__top">
+              <img
+                src="img/OffersTwoBlockTwo.svg"
+                alt="Вторая акция"
+                class="OfferCard__image"
+              />
+              <div class="OfferCard__text-overlay">
+                <h2 class="OfferCard__title"></h2>
+                <p class="OfferCard__subtitle">
+                </p>
+              </div>
+            </div>
+            <div class="OfferCard__bottom">
+              <a href="#" class="OfferCard__more">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <div class="site-footer__col">
+            <span class="footer-logo">
+              EuroOil
+              <img src="img/logo.svg" alt="EuroOil Logo" />
+            </span>
+            <nav class="footer-nav">
+              <a href="/index.html">На главную</a>
+              <a href="/adresa.html">Адреса</a>
+              <a href="/services.html">Услуги</a>
+            </nav>
+          </div>
+
+          <div class="site-footer__col">
+            <div class="footer-phone">
+              8 (707) 249-34-56
+              <div>euroil@mail.ru</div>
+            </div>
+            <nav class="footer-nav">
+              <a href="/offers.html">Акции</a>
+              <a href="/jobs.html">Трудоустройство</a>
+              <a href="/refuel.html">Топливо</a>
+            </nav>
+          </div>
+
+          <div class="site-footer__col site-footer__col--right">
+            <div class="footer-contact-title">Обратная связь</div>
+            <div class="footer-social">
+              <a href="https://t.me/aleksey1854" target="_blank"
+                ><img src="img/telegram.svg" alt="Telegram"
+              /></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=77072493456"
+                target="_blank"
+                ><img src="img/whatsapp.svg" alt="WhatsApp"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

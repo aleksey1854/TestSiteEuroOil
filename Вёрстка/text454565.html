@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Популярное топливо</title>
+
+    <!-- Подключаем Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Ваши стили для карточек и кнопки (копируйте в свой main.css или оставьте здесь) -->
+    <style>
+      .MainFive__heading {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      .MainFive__highlight {
+        color: #f6be1c;
+      }
+      .MainFive__card {
+        background-color: #fff;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      .MainFive__img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.25rem;
+      }
+      .MainFive__price {
+        font-size: 1.5rem;
+        color: #f6be1c;
+        font-weight: 600;
+      }
+      .MainFive__check {
+        width: 1rem;
+        height: auto;
+      }
+      .MainFive__btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: linear-gradient(90deg, #f6be1c 0%, #db7173 100%);
+        color: #fff;
+        border-radius: 0.875rem;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .MainFive__btn:hover {
+        opacity: 0.9;
+      }
+
+      * {
+        outline: 1px dashed red !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Начало секции с каруселью -->
+    <section class="MainFive py-5">
+      <div class="container MainFive--inner">
+        <h3 class="MainFive__heading mb-4">
+          Популярное <span class="MainFive__highlight">топливо</span>
+        </h3>
+
+        <!-- Карусель Bootstrap -->
+        <div
+          id="MainFiveCarousel"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="5000"
+        >
+          <!-- Индикаторы (точки) -->
+          <ol class="carousel-indicators">
+            <li
+              data-target="#MainFiveCarousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#MainFiveCarousel" data-slide-to="1"></li>
+            <li data-target="#MainFiveCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Сам контент карусели -->
+          <div class="carousel-inner">
+            <!-- Слайд 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <div class="MainFive__card text-center">
+                  <img
+                    src="img/MainFiveBlockOnePic.svg"
+                    alt="Топливо 1"
+                    class="MainFive__img mb-3"
+                  />
+                  <h2 class="MainFive__price mb-3">210 ₸/л</h2>
+                  <p class="d-flex align-items-start mb-2">
+                    <img
+                      src="img/MainFiveCheckIcon.svg"
+                      alt="✓"
+                      class="MainFive__check mr-2 mt-1"
+                    />
+                    Сбалансированная мощность и экономичность
+                  </p>
+                  <p class="d-flex align-items-start mb-2">
+                    <img
+                      src="img/MainFiveCheckIcon.svg"
+                      alt="✓"
+                      class="MainFive__check mr-2 mt-1"
+                    />
+                    Стабильная работа при умеренных нагрузках
+                  </p>
+                  <p class="d-flex align-items-start">
+                    <img
+                      src="img/MainFiveCheckIcon.svg"
+                      alt="✓"
+                      class="MainFive__check mr-2 mt-1"
+                    />
+                    Доступная цена для ежедневного использования
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Слайд 2 -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="MainFive__card text-center">
+                  <img
+                    src="img/MainFiveBlockTwoPic.svg"
+                    alt="Топливо 2"
+                    class="MainFive__img mb-3"
+                  />
+                  <h2 class="MainFive__price mb-3">262 ₸/л</h2>
+                  <p class="d-flex align-items-start mb-2">
+                    <img
+                      src="img/MainFiveCheckIcon.svg"
+                      alt="✓"
+                      class="MainFive__check mr-2 mt-1"
+                    />
+                    Повышенная устойчивость к перегреву
+                  </p>
+                  <p class="d-flex align-items-start mb-2">
+                    <img
+                      src="img/MainFiveCheckIcon.svg"
+                      alt="✓"
+                      class="MainFive__check mr-2 mt-1"
+                    />
+                    Лучший отклик двигателя на высоких оборотах
+                  </p>
+                  <p class="d-flex align-items-start">
+                    <img
+                      src="img/MainFiveCheckIcon.svg"
+                      alt="✓"
+                      class="MainFive__check mr-2 mt-1"
+                    />
+                    Идеально для современных моторов
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Слайд 3 -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="MainFive__card text-center">
+                  <img
+                    src="img/MainFiveBlockThreePic.svg"
+                    alt="Топливо 3"
+                    class="MainFive__img mb-3"
+                  />
+                  <h2 class="MainFive__price mb-3">310 ₸/л</h2>
+                  <p class="d-flex align-items-start mb-2">
+                    <img
+                      src="img/MainFiveCheckIcon.svg"
+                      alt="✓"
+                      class="MainFive__check mr-2 mt-1"
+                    />
+                    Максимальная защита от детонации
+                  </p>
+                  <p class="d-flex align-items-start mb-2">
+                    <img
+                      src="img/MainFiveCheckIcon.svg"
+                      alt="✓"
+                      class="MainFive__check mr-2 mt-1"
+                    />
+                    Оптимально для высокофорсированных двигателей
+                  </p>
+                  <p class="d-flex align-items-start">
+                    <img
+                      src="img/MainFiveCheckIcon.svg"
+                      alt="✓"
+                      class="MainFive__check mr-2 mt-1"
+                    />
+                    Гладкий ход на всех режимах работы мотора
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Стрелки навигации карусели -->
+          <a
+            class="carousel-control-prev"
+            href="#MainFiveCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#MainFiveCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <!-- Кнопка "Весь ассортимент" -->
+        <div class="text-center mt-4">
+          <a href="refuel.html" class="MainFive__btn">Весь ассортимент</a>
+        </div>
+      </div>
+    </section>
+    <!-- Конец секции -->
+
+    <!-- Подключаем jQuery, Popper.js и Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
