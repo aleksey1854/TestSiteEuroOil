@@ -829,10 +829,6 @@ body {
         max-width: 95%;
     }
 
-    .header-bottom {
-        display: none;
-    }
-
     html,
     body {
         height: 100%;
