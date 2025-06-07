@@ -151,11 +151,11 @@
     --adresa-two-map-width: 100%;
     --adresaone-bg-aspect: 1920 / 567;
 
-    --adresaone-bg-image: url("/img/AddresaOneBack.svg");
-    --servicesone-bg-image: url("/img/ServicesOneBack.svg");
-    --jobsone-bg-image: url("/img/JobsOneBack.svg");
-    --offersone-bg-image: url("/img/OffersOneBack.svg");
-    --sub-offer-one-bg-image: url("../img/SubOffersOneBack.svg");
+    --adresaone-bg-image: url("img/AddresaOneBack.svg");
+    --servicesone-bg-image: url("img/ServicesOneBack.svg");
+    --jobsone-bg-image: url("img/JobsOneBack.svg");
+    --offersone-bg-image: url("img/OffersOneBack.svg");
+    --sub-offer-one-bg-image: url("img/SubOffersOneBack.svg");
     --sub-offer-one-bg-height: auto;
     --refuelone-bg-image: url("img/RefuelOneBack.svg");
 
@@ -783,7 +783,7 @@ body {
 
         --jobs-two-card-text-width: 30.8867rem;
 
-        --sub-offer-one-bg-image: url("/img/SubOffersMobileBack.svg");
+        --sub-offer-one-bg-image: url("img/SubOffersMobileBack.svg");
         --sub-offer-one-bg-height: 497px;
 
         --sub-offer-one-inner-max-width: 95%;
@@ -949,11 +949,11 @@ body {
         --adresa-two-map-link-font-size: 0.4237rem;
 
         --adresaone-bg-aspect: 900 / 497;
-        --adresaone-bg-image: url("/img/AdresaMobileBack.svg");
-        --servicesone-bg-image: url("/img/ServicesMobileBack.svg");
-        --jobsone-bg-image: url("/img/JobsMobileBack.svg");
-        --offersone-bg-image: url("/img/OffesrMobileBack.svg");
-        --refuelone-bg-image: url("/img/RefuelMobileBack.svg");
+        --adresaone-bg-image: url("img/AdresaMobileBack.svg");
+        --servicesone-bg-image: url("img/ServicesMobileBack.svg");
+        --jobsone-bg-image: url("img/JobsMobileBack.svg");
+        --offersone-bg-image: url("img/OffesrMobileBack.svg");
+        --refuelone-bg-image: url("img/RefuelMobileBack.svg");
 
         --adresaone-inner-top: 1.553rem;
         --adresaone-inner-transform: none;
