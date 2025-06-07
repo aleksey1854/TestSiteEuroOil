@@ -2816,10 +2816,6 @@ header nav ul li.btn a:active {
     text-shadow: 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.25);
 }
 
-* {
-    outline: 1px dashed red !important;
-}
-
 .RefuelOne {
     position: relative;
 }
